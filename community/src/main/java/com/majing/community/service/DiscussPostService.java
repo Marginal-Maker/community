@@ -1,0 +1,28 @@
+package com.majing.community.service;
+
+import com.majing.community.entity.DiscussPost;
+
+import java.util.List;
+/**
+ * @author majing
+ * @date 2023-08-02 20:44
+ * @Description 评论相关的业务层逻辑接口
+ */
+public interface DiscussPostService {
+    /**
+     * 获取符合条件的评论并分页
+     * @param userId
+     * @param offset
+     * @param limit
+     * @return java.util.List<com.majing.community.entity.DiscussPost>
+     * @created at 2023/8/2 20:46
+    */
+    List<DiscussPost> getDiscussPosts(Integer userId, Integer offset, Integer limit);
+    /**
+     * 获取相应条件的评论数量
+     * @param userId
+     * @return java.lang.Integer
+     * @created at 2023/8/2 20:48
+    */
+    Integer getDiscussPostRows(Integer userId);
+}
