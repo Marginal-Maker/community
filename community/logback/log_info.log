@@ -1,5 +1,0 @@
-2023-08-03 14:34:07.529 [main] INFO  com.majing.community.LoggersTest - Starting LoggersTest using Java 1.8.0_381 on MARGIN with PID 100564 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
-2023-08-03 14:34:07.530 [main] INFO  com.majing.community.LoggersTest - No active profile set, falling back to 1 default profile: "default"
-2023-08-03 14:34:08.658 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-2023-08-03 14:34:08.863 [main] INFO  com.majing.community.LoggersTest - Started LoggersTest in 1.616 seconds (JVM running for 2.236)
-2023-08-03 14:34:09.100 [main] INFO  com.majing.community.LoggersTest - info log
