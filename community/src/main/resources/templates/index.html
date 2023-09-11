@@ -148,7 +148,7 @@
 						<li th:class="|page-item ${page.current==1?'disabled':''}|">
 							<a class="page-link" th:href="@{${page.path}(current=${page.current-1})}">上一页</a></li>
 						<li th:class="|page-item ${i==page.current?'active':''}|" th:each="i:${#numbers.sequence(page.getFrom,page.getTo)}">
-							<a class="page-link" th:href="@{${page.path}(current=${page.current})}" th:text="${i}">1</a>
+							<a class="page-link" th:href="@{${page.path}(current=${i})}" th:text="${i}">1</a>
 						</li>
 						<li th:class="|page-item ${page.current==page.getPageNum()?'disabled':''}|">
 							<a class="page-link" th:href="@{${page.path}(current=${page.current+1})}">下一页</a>

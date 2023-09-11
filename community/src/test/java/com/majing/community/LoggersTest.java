@@ -9,7 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 /**
  * @author majing
  * @date 2023-08-03 12:25
- * @Description
+ * @Description 测试日志文件
  */
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)

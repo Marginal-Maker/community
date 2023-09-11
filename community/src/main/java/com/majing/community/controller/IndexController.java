@@ -29,20 +29,33 @@ public class IndexController {
         this.userService = userService;
         this.discussPostService = discussPostService;
     }
+    /**
+     * 开发社区首页
+     * @param model
+     * @param page
+     * @return java.lang.String
+     * @created at 2023/9/11 17:19
+    */
     @RequestMapping(path = "/index", method = RequestMethod.GET)
     public String getDiscussPostsPage(Model model, Page page){
+        //初始化页面时，没有page传入，此时设置page为1
         if(page.getCurrent() == null){
             page.setCurrent(1);
         }
+        //默认每页显示10页
         if(page.getLimit()==null){
             page.setLimit(10);
         }
+        //获取总行数
         page.setRows(discussPostService.getDiscussPostRows(null));
+        //指定页面跳转时的访问路劲，
         page.setPath("/index");
+        //获取符合条件的某页数据，整合为一个List集合，元素类型为Map集合
         List<DiscussPost> discussPostList = discussPostService.getDiscussPosts(null, page.getOffSet(), page.getLimit());
         List<Map<String, Object>> userDiscussPosts = new ArrayList<>();
         if(discussPostList != null && discussPostList.size()>0){
             for(DiscussPost discussPost: discussPostList){
+                //定义长度为2的Map集合，一个位置保存评论，一个位置保存评论对应的用户对象。
                 Map<String, Object> map = new HashMap<>(2);
                 map.put("discussPost", discussPost);
                 User user = userService.getUserById(discussPost.getUserId());

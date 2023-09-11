@@ -117,10 +117,10 @@
         <appender-ref ref="DB"/>
         -->
     </root>
-
-    <logger name="com.majing.community.dao" level="debug">
+    <!--name:用来指定受此loger约束的某一个包或者具体的某一个类。-->
+    <!--addtivity:是否向上级loger传递打印信息。默认是true。-->
+    <logger name="com.majing.community.dao" level="info">
     </logger>
-
     <!--配置多环境日志输出  可以在application.properties中配置选择哪个profiles : spring.profiles.active=dev-->
     <!--生产环境:输出到文件-->
     <!--<springProfile name="pro">
