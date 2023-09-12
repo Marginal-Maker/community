@@ -55,6 +55,18 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>3.0.2</version>
 		</dependency>
+		<!--Spring邮件收发依赖-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+			<version>3.1.3</version>
+		</dependency>
+        <!--用于判断常用的字符串集合等空值的情况-->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.13.0</version>
+		</dependency>
 
 		<!-- 调用DBAppender实现数据库存储
 		<dependency>
