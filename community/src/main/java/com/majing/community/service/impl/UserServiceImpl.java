@@ -1,22 +1,22 @@
 package com.majing.community.service.impl;
 
+import com.majing.community.dao.LoginTicketMapper;
 import com.majing.community.dao.UserMapper;
+import com.majing.community.entity.LoginTicket;
 import com.majing.community.entity.User;
 import com.majing.community.service.UserService;
 import com.majing.community.util.CommunityUtil;
 import com.majing.community.util.MailClient;
+import com.majing.community.util.RegularExpressionUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
+import com.majing.community.util.CommunityConstant;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.*;
 
 /**
  * @author majing
@@ -24,19 +24,21 @@ import java.util.regex.Pattern;
  * @Description
  */
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UserService, CommunityConstant {
     private final UserMapper userMapper;
     private final MailClient mailClient;
     private final TemplateEngine templateEngine;
+    private final LoginTicketMapper loginTicketMapper;
     @Value("${community.path.domain}")
     private String domain;
     @Value("${server.servlet.context-path}")
     private String contextPath;
     @Autowired
-    public UserServiceImpl(UserMapper userMapper, MailClient mailClient, TemplateEngine templateEngine) {
+    public UserServiceImpl(UserMapper userMapper, MailClient mailClient, TemplateEngine templateEngine, LoginTicketMapper loginTicketMapper) {
         this.userMapper = userMapper;
         this.mailClient = mailClient;
         this.templateEngine = templateEngine;
+        this.loginTicketMapper = loginTicketMapper;
     }
     @Override
     public User getUserById(Integer id) {
@@ -45,8 +47,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Map<String, Object> register(User user) {
-        Map<String, Object> map = new HashMap<>();
-        //空值处理
+        Map<String, Object> map = new HashMap<>(1);
+        //空值处理，该情况必须抛出异常
         if(user == null){
             throw new IllegalArgumentException("参数不能为空！");
         }
@@ -68,15 +70,10 @@ public class UserServiceImpl implements UserService {
             map.put("usernameMessage", "用户名已经存在");
             return map;
         }
-        if(user.getPassword().length() < 8){
-            map.put("passwordMessage", "密码不能小于8位");
-            return map;
-        }
-        String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&+=])(?=\\S+$).{8,}$";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(user.getPassword());
-        if(!matcher.matches()){
-            map.put("passwordMessage", "密码必须同时包含数字，大小写字母和特殊字符");
+        //验证密码
+        String passwordMessage = RegularExpressionUtil.verifyPassword(user.getPassword());
+        if(!StringUtils.isBlank(passwordMessage)){
+            map.put("passwordMessage", passwordMessage);
             return map;
         }
         user1 = userMapper.selectByEmail(user.getEmail());
@@ -85,32 +82,107 @@ public class UserServiceImpl implements UserService {
             return map;
         }
         //注册用户
+        //随机五个字符代表盐值
         user.setSalt(CommunityUtil.generateUUID().substring(0, 5));
+        //加密
         user.setPassword(CommunityUtil.md5(user.getPassword() + user.getSalt()));
         user.setType(0);
         user.setStatus(0);
+        //激活码为随机字符
         user.setActivationCode(CommunityUtil.generateUUID());
         user.setHeaderUrl(String.format("https://images.nowcoder.com/head/%dt.png", new Random().nextInt(1000)));
+        user.setCreateTime(new Date());
         userMapper.insertUser(user);
         //邮箱激活
+        //声明Context对象，用来存数据给thymeleaf渲染
         Context context = new Context();
         context.setVariable("email", user.getEmail());
         String url = domain + contextPath + "/activation" + "/" + user.getId() + "/" + user.getActivationCode();
         context.setVariable("url", url);
+        // thymeleaf渲染发送邮件的html
         String content = templateEngine.process("/mail/activation", context);
         mailClient.sendMail(user.getEmail(), "激活账号", content);
         return map;
     }
     public Integer activation(Integer userId, String code){
+
         User user = userMapper.selectById(userId);
         if(user.getStatus() == 1){
-            return 0;
+            return ACTIVATION_SUCCESS;
         }else if (user.getActivationCode().equals(code)){
             userMapper.updateStatus(userId, 1);
-            return 1;
+            return ACTIVATION_REPEAT;
         }else {
-            return 2;
+            return ACTIVATION_FAILURE;
         }
 
     }
+    @Override
+    public Map<String, Object> login(String username, String password, Integer expire) {
+        Map<String, Object> map = new HashMap<>(1);
+        //空值处理
+        if (StringUtils.isBlank(username)) {
+            map.put("usernameMessage", "账号不能为空");
+            return map;
+        }
+        if (StringUtils.isBlank(password)) {
+            map.put("passwordMessage", "密码不能为空");
+            return map;
+        }
+        //验证账号
+        User user = userMapper.selectByName(username);
+        if(user == null){
+            map.put("usernameMessage", "用户不存在");
+            return map;
+        }
+        if (user.getStatus().equals(0)) {
+            map.put("usernameMessage", "该账号未激活");
+            return map;
+        }
+        //验证密码
+        String passwordSalt = CommunityUtil.md5(password + user.getSalt());
+        if(!user.getPassword().equals(passwordSalt)){
+            map.put("passwordMessage", "密码错误");
+            return map;
+        }
+        //生成登录凭证
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setUserId(user.getId());
+        loginTicket.setTicket(CommunityUtil.generateUUID());
+        loginTicket.setStatus(0);
+        //凭证过期时间，退出登录时凭证强制过期
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + expire.longValue() * 1000));
+        loginTicketMapper.insertLoginTicket(loginTicket);
+        //返回凭证给controller层保存到cookie中，之后的请求都根据cookie传回的凭证判断是哪一个用户。本质上还是cookie-session，不是tooken
+        map.put("ticket", loginTicket.getTicket());
+        return map;
+    }
+    public void logout(String ticket){
+        loginTicketMapper.updateStatus(ticket, 1);
+    }
+    public LoginTicket getLoginTicket(String ticket){
+        return loginTicketMapper.selectByTicket(ticket);
+    }
+
+    @Override
+    public Integer settingHeader(Integer userId, String headerUrl) {
+        return userMapper.updateHeader(userId, headerUrl);
+    }
+
+    @Override
+    public String settingPassword(User user, String oldPassword ,String newPassword) {
+        if(StringUtils.isBlank(oldPassword) || StringUtils.isBlank(newPassword)){
+            throw new IllegalArgumentException("参数不能为空！");
+        }
+        if(!oldPassword.equals(user.getPassword())){
+            return "原密码不正确！";
+        }
+        String passwordMessage = RegularExpressionUtil.verifyPassword(oldPassword);
+        if(!StringUtils.isBlank(passwordMessage)){
+            return passwordMessage;
+        }
+        return "";
+    }
+
+
 }

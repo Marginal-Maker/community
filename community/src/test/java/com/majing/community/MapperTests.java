@@ -1,26 +1,36 @@
 package com.majing.community;
 
 import com.majing.community.dao.DiscussPostMapper;
+import com.majing.community.dao.LoginTicketMapper;
 import com.majing.community.dao.UserMapper;
 import com.majing.community.entity.DiscussPost;
+import com.majing.community.entity.LoginTicket;
 import com.majing.community.entity.User;
+import com.majing.community.util.CommunityUtil;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.util.CollectionUtils;
 
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
 public class MapperTests {
     private final UserMapper userMapper;
     private final DiscussPostMapper discussPostMapper;
+    private final LoginTicketMapper loginTicketMapper;
     private final User user = new User();
     @Autowired
-    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper) {
+    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper, LoginTicketMapper loginTicketMapper) {
         this.userMapper = userMapper;
         this.discussPostMapper = discussPostMapper;
+        this.loginTicketMapper = loginTicketMapper;
     }
     @Test
     public void testSelectUser() {
@@ -49,6 +59,23 @@ public class MapperTests {
             System.out.println(discussPost);
         }
         System.out.println(discussPostMapper.selectDiscussPostRows(149));
+    }
+    @Test
+    public void testLoginTicket(){
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setUserId(1);
+        loginTicket.setTicket(CommunityUtil.generateUUID());
+        loginTicket.setStatus(0);
+        loginTicket.setExpired(new Date(System.currentTimeMillis()));
+        //System.out.println(loginTicketMapper.insertLoginTicket(loginTicket));
+        System.out.println(loginTicketMapper.updateStatus("10a07359c9a04ee79f2792bbf0f576fa", 1));
+        System.out.println(loginTicketMapper.selectByTicket("10a07359c9a04ee79f2792bbf0f576fa"));
+    }
+    @Test
+    public void testMap(){
+        Map<String, Object> map = new HashMap<>(10);
+        System.out.println(CollectionUtils.isEmpty(map));
+        System.out.println(map.size());
     }
 
 }

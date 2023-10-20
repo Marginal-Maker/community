@@ -41,13 +41,18 @@ public class MailClient {
             MimeMessage mimeMessage = javaMailSender.createMimeMessage();
             //创建mimeMessageHelper用来帮助构建mimeMessage对象里的信息
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage);
+            //指定发送方
             mimeMessageHelper.setFrom(mailClient);
+            //指定接收方，一般前端作为参数传入或者数据库中查找
             mimeMessageHelper.setTo(mailServer);
+            //指定邮件主题
             mimeMessageHelper.setSubject(subject);
+            //指定邮件内容，html: true表明内容是html格式
             mimeMessageHelper.setText(content,true);
             //发送由mimeMessageHelper返回的辅助构建的mimeMessage
             javaMailSender.send(mimeMessageHelper.getMimeMessage());
         } catch (MessagingException e) {
+            //调用第三方工具类，打日志区分是本地原因还是第三方的原因
             logger.error("发送邮件失败：" + e.getMessage());
         }
 

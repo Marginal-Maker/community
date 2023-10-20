@@ -18,6 +18,7 @@ public class CommunityUtil {
      * @created at 2023/9/12 14:51
     */
     public static String generateUUID(){
+        //UUID生成器
         return UUID.randomUUID().toString().replaceAll("-", "");
     }
     /**
@@ -27,6 +28,7 @@ public class CommunityUtil {
      * @created at 2023/9/12 14:53
     */
     public static String md5(String key){
+        //md5加密，先判断是否为null
         if(StringUtils.isBlank(key)){
             return null;
         }

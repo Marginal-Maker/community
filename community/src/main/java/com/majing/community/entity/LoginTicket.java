@@ -1,0 +1,67 @@
+package com.majing.community.entity;
+
+import java.util.Date;
+
+/**
+ * @author majing
+ * @date 2023-09-13 15:34
+ * @Description 登录凭证
+ */
+public class LoginTicket {
+    private Integer id;
+    private Integer userId;
+    private String ticket;
+    private Integer status;
+    private Date expired;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public String getTicket() {
+        return ticket;
+    }
+
+    public void setTicket(String ticket) {
+        this.ticket = ticket;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Date getExpired() {
+        return expired;
+    }
+
+    public void setExpired(Date expired) {
+        this.expired = expired;
+    }
+
+    @Override
+    public String toString() {
+        return "LoginTicket{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", ticket='" + ticket + '\'' +
+                ", status=" + status +
+                ", expired=" + expired +
+                '}';
+    }
+}
