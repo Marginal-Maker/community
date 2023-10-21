@@ -13,7 +13,7 @@ import java.util.List;
 @Mapper
 public interface DiscussPostMapper {
     /**
-     * 根据条件查询多个评论并分页显示
+     * 根据条件查询多个评论并分页显示（手动实现）
      * @param userId
      * @param offset
      * @param limit
@@ -27,6 +27,15 @@ public interface DiscussPostMapper {
      * @return java.lang.Integer
      * @created at 2023/8/2 19:40
     */
+    // @Param注解用于给参数取别名
+    // 如果只有一个参数，并且在<if>中使用，则必须要加别名
     Integer selectDiscussPostRows(Integer userId);
+    /**
+     * 通过分页插件实现分页查询功能
+     * @param userId
+     * @return java.util.List<com.majing.community.entity.DiscussPost>
+     * @created at 2023/10/21 15:44
+    */
+    List<DiscussPost> selectDiscussPostByPageHelper(Integer userId);
 
 }

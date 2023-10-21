@@ -25,4 +25,13 @@ public interface DiscussPostService {
      * @created at 2023/8/2 20:48
     */
     Integer getDiscussPostRows(Integer userId);
+    /**
+     * 通过分页插件获取数据
+     * @param userId
+     * @param offset
+     * @param limit
+     * @return java.util.List<com.majing.community.entity.DiscussPost>
+     * @created at 2023/10/21 16:05
+    */
+    List<DiscussPost> getDiscussPostsByPageHelper(Integer userId, Integer offset, Integer limit);
 }

@@ -7,7 +7,6 @@ import com.majing.community.util.CommunityConstant;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +29,7 @@ import java.util.Map;
 /**
  * @author majing
  * @date 2023-09-12 14:06
- * @Description 登录页面
+ * @Description 登录注册页面
  */
 @Controller
 public class LoginController implements CommunityConstant {
@@ -56,7 +55,7 @@ public class LoginController implements CommunityConstant {
         return "site/register";
     }
     /**
-     * 注册功能中需要向页面返回的内容
+     * 注册功能中注册页面需要向页面返回的内容
      * @param model
      * @param user
      * @return java.lang.String
@@ -148,6 +147,7 @@ public class LoginController implements CommunityConstant {
         Map<String, Object> map = userService.login(username, password, expiredSeconds);
         if(map.containsKey("ticket")){
             Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
+            //指定凭证生效的路劲
             cookie.setPath(contextPath);
             cookie.setMaxAge(expiredSeconds);
             httpServletResponse.addCookie(cookie);

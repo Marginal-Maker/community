@@ -3,11 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.majing.community.dao.DiscussPostMapper">
+    <!--提取共用的字段-->
     <sql id="selectFields">
        id, user_id, title, content, type, status, create_time, comment_count, score
     </sql>
     <select id="selectDiscussPosts" resultType="DiscussPost">
-        select <include refid="selectFields"></include>
+        select
+        <include refid="selectFields"/>
         from discuss_post
         where status != 2
         <if test="userId != null">
@@ -18,6 +20,15 @@
     </select>
     <select id="selectDiscussPostRows" resultType="Integer">
         select count(id)
+        from discuss_post
+        where status != 2
+        <if test="userId != null">
+            and user_id = #{userId}
+        </if>
+    </select>
+    <select id="selectDiscussPostByPageHelper" resultType="DiscussPost">
+        select
+        <include refid="selectFields"/>
         from discuss_post
         where status != 2
         <if test="userId != null">

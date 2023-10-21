@@ -18,7 +18,7 @@ import java.util.Date;
 /**
  * @author majing
  * @date 2023-09-17 19:50
- * @Description
+ * @Description 拦截器
  */
 @Component
 public class LoginTicketInterceptor implements HandlerInterceptor {

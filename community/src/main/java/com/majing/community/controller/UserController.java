@@ -56,23 +56,24 @@ public class UserController {
         }
         //获取文件名，如1.png
         String fileName = multipartFile.getOriginalFilename();
-        if(!StringUtils.isBlank(fileName)){
-            //截取suffix=png
-            String suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
-            if(StringUtils.isBlank(suffix)){
-                model.addAttribute("error", "图片格式不对！");
-                return "site/setting";
-            }
-            String filename = CommunityUtil.generateUUID() + suffix;
-            File dest = new File(uploadPath + "/" + filename);
-            try {
-                multipartFile.transferTo(dest);
-            } catch (IOException e) {
-                logger.error("上传文件失败：" + e.getMessage());
-                throw new RuntimeException("上传文件失败，服务器发生异常！", e);
-            }
+        String suffix = null;
+        if (fileName != null) {
+            suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
         }
-        String headUrl = domain + contextPath + "/user/header" + fileName;
+        if(StringUtils.isBlank(suffix) || !StringUtils.contains("png,jpg,jpeg", suffix)){
+            model.addAttribute("error", "图片格式不对！");
+            return "site/setting";
+        }
+        fileName = CommunityUtil.generateUUID() + '.' + suffix;
+        File dest = new File(uploadPath + "/" + fileName);
+        try {
+            multipartFile.transferTo(dest);
+        } catch (IOException e) {
+            logger.error("上传文件失败：" + e.getMessage());
+            throw new RuntimeException("上传文件失败，服务器发生异常！", e);
+        }
+
+        String headUrl = domain + contextPath + "/user/header/" + fileName;
         userService.settingHeader(hostHolder.getUser().getId(), headUrl);
         return "redirect:/index";
     }
@@ -84,7 +85,7 @@ public class UserController {
         try (FileInputStream fileInputStream = new FileInputStream(fileName)){
             OutputStream outputStream = httpServletResponse.getOutputStream();
             byte[] buffer = new byte[1024];
-            int b;
+            int b = 0;
             while((b = fileInputStream.read(buffer)) != -1){
                 outputStream.write(buffer, 0, b);
             }

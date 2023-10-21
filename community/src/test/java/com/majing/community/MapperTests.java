@@ -6,6 +6,7 @@ import com.majing.community.dao.UserMapper;
 import com.majing.community.entity.DiscussPost;
 import com.majing.community.entity.LoginTicket;
 import com.majing.community.entity.User;
+import com.majing.community.service.DiscussPostService;
 import com.majing.community.util.CommunityUtil;
 
 import org.junit.jupiter.api.Test;
@@ -25,12 +26,14 @@ public class MapperTests {
     private final UserMapper userMapper;
     private final DiscussPostMapper discussPostMapper;
     private final LoginTicketMapper loginTicketMapper;
+    private final DiscussPostService discussPostService;
     private final User user = new User();
     @Autowired
-    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper, LoginTicketMapper loginTicketMapper) {
+    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper, LoginTicketMapper loginTicketMapper, DiscussPostService discussPostService) {
         this.userMapper = userMapper;
         this.discussPostMapper = discussPostMapper;
         this.loginTicketMapper = loginTicketMapper;
+        this.discussPostService = discussPostService;
     }
     @Test
     public void testSelectUser() {
@@ -76,6 +79,13 @@ public class MapperTests {
         Map<String, Object> map = new HashMap<>(10);
         System.out.println(CollectionUtils.isEmpty(map));
         System.out.println(map.size());
+    }
+    @Test
+    public void testPageHelper(){
+        List<DiscussPost> discussPostList = discussPostService.getDiscussPostsByPageHelper(null, 1, 1);
+        for(DiscussPost discussPost : discussPostList){
+            System.out.println(discussPost);
+        }
     }
 
 }

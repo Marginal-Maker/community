@@ -1,5 +1,7 @@
 package com.majing.community.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.majing.community.dao.DiscussPostMapper;
 import com.majing.community.entity.DiscussPost;
 import com.majing.community.service.DiscussPostService;
@@ -30,4 +32,13 @@ public class DiscussPostServiceImpl implements DiscussPostService {
     public Integer getDiscussPostRows(Integer userId) {
         return discussPostMapper.selectDiscussPostRows(userId);
     }
+
+    @Override
+    public List<DiscussPost> getDiscussPostsByPageHelper(Integer userId, Integer offset, Integer limit) {
+        PageHelper.startPage(offset, limit);
+        List<DiscussPost> discussPostList = discussPostMapper.selectDiscussPostByPageHelper(userId);
+        PageInfo<DiscussPost> discussPostPageInfo = new PageInfo<>(discussPostList);
+        return discussPostPageInfo.getList();
+    }
+
 }

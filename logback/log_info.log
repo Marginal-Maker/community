@@ -1,10 +1,487 @@
-2023-10-20 16:07:16.316 [main] INFO  com.majing.community.LoggersTest - Starting LoggersTest using Java 17.0.8 with PID 35788 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
-2023-10-20 16:07:16.319 [main] INFO  com.majing.community.LoggersTest - No active profile set, falling back to 1 default profile: "default"
-2023-10-20 16:07:18.558 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-2023-10-20 16:07:18.874 [main] INFO  com.majing.community.LoggersTest - Started LoggersTest in 2.979 seconds (process running for 7.96)
-2023-10-20 16:07:19.739 [main] INFO  com.majing.community.LoggersTest - info log
-2023-10-20 16:08:18.377 [main] INFO  com.majing.community.LoggersTest - Starting LoggersTest using Java 17.0.8 with PID 16020 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
-2023-10-20 16:08:18.380 [main] INFO  com.majing.community.LoggersTest - No active profile set, falling back to 1 default profile: "default"
-2023-10-20 16:08:20.482 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
-2023-10-20 16:08:20.890 [main] INFO  com.majing.community.LoggersTest - Started LoggersTest in 2.838 seconds (process running for 3.468)
-2023-10-20 16:08:21.824 [main] INFO  com.majing.community.LoggersTest - info log
+2023-10-21 14:49:19.843 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 98972 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 14:49:19.845 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 14:49:21.692 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 14:49:22.095 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.567 seconds (process running for 3.306)
+2023-10-21 15:30:46.919 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 98808 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 15:30:46.920 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 15:30:48.622 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 15:30:48.945 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.356 seconds (process running for 3.052)
+2023-10-21 15:38:02.071 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 99736 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 15:38:02.073 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 15:38:04.508 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 15:38:04.915 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 3.491 seconds (process running for 4.78)
+2023-10-21 15:38:27.264 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 83824 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 15:38:27.266 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 15:38:27.301 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 15:38:27.301 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 15:38:28.069 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 15:38:28.073 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 15:38:28.075 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 15:38:28.076 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 15:38:28.113 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 15:38:28.114 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 813 ms
+2023-10-21 15:38:28.519 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 15:38:28.616 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 15:38:28.626 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 15:38:28.637 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 15:38:28.642 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.746 seconds (process running for 2.102)
+2023-10-21 15:38:40.384 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 15:38:40.384 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 15:38:40.384 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 16:35:51.389 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 26 class path changes (0 additions, 24 deletions, 2 modifications)
+2023-10-21 16:35:51.429 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-21 16:35:51.429 [Thread-5] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-21 16:35:51.432 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-21 16:35:51.447 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-21 16:35:51.450 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-21 16:35:51.527 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 83824 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 16:35:51.527 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 16:35:51.635 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 16:35:51.635 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 16:35:51.635 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 16:35:51.635 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 16:35:51.640 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 16:35:51.640 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 112 ms
+2023-10-21 16:35:51.667 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 16:35:51.719 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-21 16:35:51.723 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-21 16:35:55.215 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 83824 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 16:35:55.215 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 16:35:55.320 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 16:35:55.321 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 16:35:55.322 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 16:35:55.322 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 16:35:55.328 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 16:35:55.328 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 112 ms
+2023-10-21 16:35:55.386 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 16:35:55.409 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 16:35:55.415 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 16:35:55.417 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 16:35:55.419 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 0.219 seconds (process running for 3448.878)
+2023-10-21 16:35:55.420 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-21 16:35:57.047 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 101416 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 16:35:57.048 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 16:35:58.821 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 16:35:59.110 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.368 seconds (process running for 3.034)
+2023-10-21 16:41:02.077 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 98640 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 16:41:02.078 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 16:41:03.776 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 16:41:04.117 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.356 seconds (process running for 2.931)
+2023-10-21 16:44:03.665 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 100920 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 16:44:03.667 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 16:44:05.391 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 16:44:05.720 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.371 seconds (process running for 3.005)
+2023-10-21 16:46:39.333 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 99380 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 16:46:39.335 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 16:46:41.223 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 16:46:41.635 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.658 seconds (process running for 3.623)
+2023-10-21 16:47:10.479 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 101920 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 16:47:10.481 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 16:47:12.449 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 16:47:12.857 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.714 seconds (process running for 3.408)
+2023-10-21 18:39:17.145 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 2 deletions, 1 modification)
+2023-10-21 18:39:17.193 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:39:17.193 [Thread-7] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-21 18:39:17.210 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:39:17.213 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:39:17.325 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 83824 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 18:39:17.325 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 18:39:17.468 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 18:39:17.469 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:39:17.469 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 18:39:17.469 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 18:39:17.476 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 18:39:17.476 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 150 ms
+2023-10-21 18:39:17.487 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-21 18:39:17.490 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-21 18:39:20.955 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 83824 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 18:39:20.955 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 18:39:21.112 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 18:39:21.113 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:39:21.113 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 18:39:21.113 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 18:39:21.124 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 18:39:21.124 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 168 ms
+2023-10-21 18:39:21.205 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 18:39:21.238 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 18:39:21.243 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:39:21.246 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 18:39:21.249 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 0.311 seconds (process running for 10854.708)
+2023-10-21 18:39:21.250 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-21 18:39:22.728 [main] INFO  com.majing.community.MapperTests - Starting MapperTests using Java 17.0.8 with PID 98756 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 18:39:22.729 [main] INFO  com.majing.community.MapperTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 18:39:24.605 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 18:39:24.918 [main] INFO  com.majing.community.MapperTests - Started MapperTests in 2.498 seconds (process running for 4.697)
+2023-10-21 18:39:54.867 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 18:39:54.867 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 18:39:54.868 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-21 18:40:42.849 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 100088 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 18:40:42.851 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 18:40:42.882 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 18:40:42.882 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 18:40:43.635 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 18:40:43.642 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:40:43.643 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 18:40:43.644 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 18:40:43.690 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 18:40:43.691 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 809 ms
+2023-10-21 18:40:44.044 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 18:40:44.148 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 18:40:44.159 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 18:40:44.171 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 18:40:44.177 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.631 seconds (process running for 2.025)
+2023-10-21 18:41:15.444 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 18:41:15.445 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 18:41:15.446 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-21 20:43:10.354 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 107844 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 20:43:10.356 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 20:43:10.396 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 20:43:10.397 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 20:43:11.243 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 20:43:11.250 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 20:43:11.251 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 20:43:11.251 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 20:43:11.309 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 20:43:11.309 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 912 ms
+2023-10-21 20:43:11.581 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-21 20:43:11.593 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-21 20:45:25.388 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 7844 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 20:45:25.389 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 20:45:25.422 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 20:45:25.422 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 20:45:26.148 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 20:45:26.155 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 20:45:26.157 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 20:45:26.157 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 20:45:26.193 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 20:45:26.193 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 771 ms
+2023-10-21 20:45:26.528 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 20:45:26.640 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 20:45:26.651 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 20:45:26.665 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 20:45:26.672 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.578 seconds (process running for 1.911)
+2023-10-21 20:45:41.013 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 20:45:41.014 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 20:45:41.014 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 20:54:14.959 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 99960 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 20:54:14.960 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 20:54:14.990 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 20:54:14.990 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 20:54:15.651 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 20:54:15.659 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 20:54:15.661 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 20:54:15.662 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 20:54:15.699 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 20:54:15.699 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 709 ms
+2023-10-21 20:54:16.035 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 20:54:16.158 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 20:54:16.174 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 20:54:16.187 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 20:54:16.194 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.512 seconds (process running for 1.86)
+2023-10-21 20:54:22.656 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 20:54:22.658 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 20:54:22.658 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 20:58:12.932 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 107708 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 20:58:12.934 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 20:58:12.964 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 20:58:12.964 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 20:58:13.641 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 20:58:13.647 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 20:58:13.649 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 20:58:13.649 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 20:58:13.692 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 20:58:13.693 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 728 ms
+2023-10-21 20:58:14.023 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 20:58:14.132 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 20:58:14.144 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 20:58:14.156 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 20:58:14.163 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.551 seconds (process running for 1.99)
+2023-10-21 20:59:37.927 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 20:59:37.927 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 20:59:37.928 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 21:09:57.000 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 99056 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:09:57.001 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:09:57.028 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:09:57.029 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:09:57.669 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:09:57.676 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:09:57.677 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:09:57.677 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:09:57.717 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:09:57.718 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 689 ms
+2023-10-21 21:09:58.056 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:09:58.153 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:09:58.165 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:09:58.180 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:09:58.187 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.48 seconds (process running for 1.854)
+2023-10-21 21:10:03.971 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:10:03.971 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:10:03.971 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 21:17:50.502 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 103112 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:17:50.503 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:17:50.530 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:17:50.530 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:17:51.184 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:17:51.189 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:17:51.192 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:17:51.192 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:17:51.233 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:17:51.234 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 703 ms
+2023-10-21 21:17:51.558 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:17:51.663 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:17:51.673 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:17:51.684 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:17:51.690 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.472 seconds (process running for 1.79)
+2023-10-21 21:18:01.300 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:18:01.300 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:18:01.301 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-21 21:21:12.220 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 107160 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:21:12.223 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:21:12.251 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:21:12.251 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:21:15.355 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:21:15.399 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3148 ms
+2023-10-21 21:21:15.726 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:21:15.822 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:21:15.842 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:21:15.851 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 5.192 seconds (process running for 22.883)
+2023-10-21 21:21:41.352 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 90684 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:21:41.353 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:21:41.381 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:21:41.381 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:21:42.049 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:21:42.054 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:21:42.055 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:21:42.056 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:21:42.101 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:21:42.102 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 721 ms
+2023-10-21 21:21:42.408 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:21:42.502 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:21:42.515 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:21:42.526 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:21:42.531 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.462 seconds (process running for 1.775)
+2023-10-21 21:21:48.452 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:21:48.452 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:21:48.453 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-21 21:25:21.779 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 37120 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:25:21.781 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:25:21.810 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:25:21.810 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:26:02.639 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:26:02.680 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 40869 ms
+2023-10-21 21:26:03.044 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:26:03.150 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:26:03.172 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:26:03.179 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 44.119 seconds (process running for 54.943)
+2023-10-21 21:26:44.292 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 104408 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:26:44.294 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:26:44.330 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:26:44.330 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:27:46.119 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:27:46.162 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 61832 ms
+2023-10-21 21:27:46.510 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:27:46.614 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:27:46.637 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:27:46.643 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 64.843 seconds (process running for 82.892)
+2023-10-21 21:27:52.501 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 108900 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:27:52.502 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:27:52.530 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:27:52.531 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:40:58.018 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:40:58.076 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 785545 ms
+2023-10-21 21:40:58.453 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:40:58.568 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:40:58.591 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:40:58.597 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 787.613 seconds (process running for 791.118)
+2023-10-21 21:41:01.484 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 94348 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:41:01.486 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:41:01.514 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:41:01.514 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:41:02.168 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:41:02.173 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:41:02.174 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:41:02.174 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:41:02.216 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:41:02.217 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 702 ms
+2023-10-21 21:41:02.529 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:41:02.628 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:41:02.640 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:41:02.650 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:41:02.656 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.465 seconds (process running for 1.797)
+2023-10-21 21:41:13.303 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 106600 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:41:13.305 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:41:13.336 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:41:13.336 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:41:14.006 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:41:14.011 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:41:14.012 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:41:14.012 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:41:14.051 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:41:14.052 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 715 ms
+2023-10-21 21:41:14.360 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:41:14.455 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:41:14.466 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:41:14.476 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:41:14.483 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.474 seconds (process running for 1.773)
+2023-10-21 21:41:19.419 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:41:19.419 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:41:19.419 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 21:43:03.709 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 107724 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:43:03.710 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:43:03.740 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:43:03.742 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:43:04.452 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:43:04.458 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:43:04.459 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:43:04.459 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:43:04.504 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:43:04.505 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 762 ms
+2023-10-21 21:43:04.855 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:43:04.962 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:43:04.973 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:43:04.985 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:43:04.991 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.565 seconds (process running for 1.897)
+2023-10-21 21:43:11.111 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:43:11.111 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:43:11.111 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 21:54:25.622 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 88704 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:54:25.624 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:54:25.654 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:54:25.655 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:54:26.443 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:54:26.451 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:54:26.452 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:54:26.452 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:54:26.494 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:54:26.494 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 839 ms
+2023-10-21 21:54:26.844 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:54:26.956 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:54:26.968 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:54:26.980 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:54:26.986 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.69 seconds (process running for 2.119)
+2023-10-21 21:54:47.754 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 70440 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:54:47.756 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:54:47.785 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:54:47.786 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:54:48.537 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:54:48.545 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:54:48.546 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:54:48.546 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:54:48.589 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:54:48.590 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 803 ms
+2023-10-21 21:54:48.924 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:54:49.031 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:54:49.043 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:54:49.055 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:54:49.061 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.649 seconds (process running for 2.217)
+2023-10-21 21:55:04.003 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 104756 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:55:04.004 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:55:04.033 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:55:04.033 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:55:04.741 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:55:04.746 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:55:04.747 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:55:04.748 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:55:04.793 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:55:04.793 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 760 ms
+2023-10-21 21:55:05.115 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:55:05.215 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:55:05.225 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:55:05.237 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:55:05.243 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.571 seconds (process running for 2.008)
+2023-10-21 21:55:46.217 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 108848 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:55:46.219 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:55:46.247 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:55:46.247 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:55:46.938 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:55:46.944 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:55:46.945 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:55:46.945 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:55:46.989 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:55:46.989 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 742 ms
+2023-10-21 21:55:47.345 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:55:47.444 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:55:47.457 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:55:47.469 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:55:47.478 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.577 seconds (process running for 2.022)
+2023-10-21 21:55:54.596 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:55:54.596 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:55:54.598 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-21 21:59:58.644 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 105520 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 21:59:58.645 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:59:58.673 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:59:58.673 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:59:59.295 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 21:59:59.299 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:59:59.301 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:59:59.301 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 21:59:59.337 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:59:59.337 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 664 ms
+2023-10-21 21:59:59.632 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 21:59:59.724 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:59:59.735 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 21:59:59.746 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 21:59:59.754 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.389 seconds (process running for 1.717)
+2023-10-21 22:00:08.243 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 22:00:08.243 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 22:00:08.244 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-21 22:00:44.388 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 103996 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 22:00:44.390 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 22:00:44.421 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 22:00:44.421 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 22:00:45.168 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 22:00:45.173 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 22:00:45.175 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 22:00:45.175 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 22:00:45.223 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 22:00:45.223 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 802 ms
+2023-10-21 22:00:45.562 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 22:00:45.662 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 22:00:45.671 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 22:00:45.683 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 22:00:45.690 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.617 seconds (process running for 2.012)
+2023-10-21 22:00:51.597 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 22:00:51.597 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 22:00:51.597 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 22:01:35.311 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 108900 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 22:01:35.312 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 22:01:35.340 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 22:01:35.340 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 22:01:35.970 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 22:01:35.976 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 22:01:35.977 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 22:01:35.977 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 22:01:36.014 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 22:01:36.015 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 674 ms
+2023-10-21 22:01:36.331 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 22:01:36.432 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 22:01:36.444 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 22:01:36.454 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 22:01:36.461 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.453 seconds (process running for 1.826)
+2023-10-21 22:01:36.597 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 22:01:36.598 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 22:01:36.598 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-21 22:02:44.328 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 100564 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-10-21 22:02:44.330 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 22:02:44.362 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 22:02:44.362 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 22:02:45.042 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-21 22:02:45.046 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-21 22:02:45.047 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 22:02:45.048 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-10-21 22:02:45.086 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-10-21 22:02:45.086 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 724 ms
+2023-10-21 22:02:45.402 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-10-21 22:02:45.500 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 22:02:45.511 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-21 22:02:45.521 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-10-21 22:02:45.527 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.496 seconds (process running for 1.831)
+2023-10-21 22:02:50.204 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 22:02:50.204 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 22:02:50.205 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
