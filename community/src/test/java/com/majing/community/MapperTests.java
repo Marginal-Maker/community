@@ -70,7 +70,7 @@ public class MapperTests {
         loginTicket.setTicket(CommunityUtil.generateUUID());
         loginTicket.setStatus(0);
         loginTicket.setExpired(new Date(System.currentTimeMillis()));
-        //System.out.println(loginTicketMapper.insertLoginTicket(loginTicket));
+        System.out.println(loginTicketMapper.insertLoginTicket(loginTicket));
         System.out.println(loginTicketMapper.updateStatus("10a07359c9a04ee79f2792bbf0f576fa", 1));
         System.out.println(loginTicketMapper.selectByTicket("10a07359c9a04ee79f2792bbf0f576fa"));
     }

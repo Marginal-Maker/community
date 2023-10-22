@@ -170,18 +170,21 @@ public class UserServiceImpl implements UserService, CommunityConstant {
     }
 
     @Override
-    public String settingPassword(User user, String oldPassword ,String newPassword) {
-        if(StringUtils.isBlank(oldPassword) || StringUtils.isBlank(newPassword)){
-            throw new IllegalArgumentException("参数不能为空！");
+    public Map<String, Object> settingPassword(User user, String oldPassword ,String newPassword) {
+        Map<String, Object> map = new HashMap<>(1);
+        oldPassword = CommunityUtil.md5(oldPassword + user.getSalt());
+        if(!StringUtils.equals(oldPassword, user.getPassword())){
+            map.put("old_passwordMessage", "原密码错误");
+            return map;
         }
-        if(!oldPassword.equals(user.getPassword())){
-            return "原密码不正确！";
-        }
-        String passwordMessage = RegularExpressionUtil.verifyPassword(oldPassword);
+        String passwordMessage = RegularExpressionUtil.verifyPassword(newPassword);
         if(!StringUtils.isBlank(passwordMessage)){
-            return passwordMessage;
+            map.put("new_passwordMessage", passwordMessage);
+            return map;
         }
-        return "";
+        newPassword = CommunityUtil.md5(newPassword + user.getSalt());
+        userMapper.updatePassword(user.getId(), newPassword);
+        return map;
     }
 
 

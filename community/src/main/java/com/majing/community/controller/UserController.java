@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,6 +21,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Map;
 
 /**
  * @author majing
@@ -91,6 +93,21 @@ public class UserController {
             }
         } catch (IOException e) {
             logger.error("读取头像失败：" + e.getMessage());
+        }
+    }
+    @RequestMapping(value = "/updatePassword", method = RequestMethod.POST)
+    public String updatePassword(Model model, String old_password, String new_password){
+        if(StringUtils.isBlank(old_password) || StringUtils.isBlank(new_password)){
+            throw new IllegalArgumentException("参数不能为空");
+        }
+        Map<String, Object> map = userService.settingPassword(hostHolder.getUser(), old_password, new_password);
+        if(CollectionUtils.isEmpty(map)){
+            return "redirect:/index";
+        }
+        else{
+            model.addAttribute("old_passwordMessage", map.get("old_passwordMessage"));
+            model.addAttribute("new_passwordMessage", map.get("new_passwordMessage"));
+            return "site/setting";
         }
     }
 

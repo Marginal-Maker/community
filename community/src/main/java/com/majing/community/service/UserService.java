@@ -72,6 +72,6 @@ public interface UserService {
      * @return java.lang.Integer
      * @created at 2023/9/18 10:12
     */
-    String settingPassword(User user, String oldPassword, String newPassword);
+    Map<String, Object> settingPassword(User user, String oldPassword, String newPassword);
 
 }
