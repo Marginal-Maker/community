@@ -87,5 +87,17 @@ public class MapperTests {
             System.out.println(discussPost);
         }
     }
+    @Test
+    public void testInsertDiscuss(){
+        DiscussPost discussPost = new DiscussPost();
+        discussPost.setUserId(1);
+        discussPost.setTitle("1");
+        discussPost.setContent("1");
+        discussPost.setType(0);
+        discussPost.setCreateTime(new Date());
+        discussPost.setCommentCount(0);
+        discussPost.setScore(0.0);
+        System.out.println(discussPostMapper.insertDiscussPost(discussPost));
+    }
 
 }

@@ -5,8 +5,10 @@ import com.github.pagehelper.PageInfo;
 import com.majing.community.dao.DiscussPostMapper;
 import com.majing.community.entity.DiscussPost;
 import com.majing.community.service.DiscussPostService;
+import com.majing.community.util.SensitiveFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.util.HtmlUtils;
 
 import java.util.List;
 
@@ -18,9 +20,11 @@ import java.util.List;
 @Service
 public class DiscussPostServiceImpl implements DiscussPostService {
     private final DiscussPostMapper discussPostMapper;
+    private final SensitiveFilter sensitiveFilter;
     @Autowired
-    public DiscussPostServiceImpl(DiscussPostMapper discussPostMapper) {
+    public DiscussPostServiceImpl(DiscussPostMapper discussPostMapper, SensitiveFilter sensitiveFilter) {
         this.discussPostMapper = discussPostMapper;
+        this.sensitiveFilter = sensitiveFilter;
     }
 
     @Override
@@ -40,5 +44,18 @@ public class DiscussPostServiceImpl implements DiscussPostService {
         PageInfo<DiscussPost> discussPostPageInfo = new PageInfo<>(discussPostList);
         return discussPostPageInfo.getList();
     }
+
+    @Override
+    public Integer addDiscussPost(DiscussPost discussPost) {
+        if (discussPost == null){
+            throw new IllegalArgumentException("参数不能为空");
+        }
+        discussPost.setContent(HtmlUtils.htmlEscape(discussPost.getTitle()));
+        discussPost.setContent(HtmlUtils.htmlEscape(discussPost.getContent()));
+        discussPost.setTitle(sensitiveFilter.filter(discussPost.getTitle()));
+        discussPost.setContent(sensitiveFilter.filter(discussPost.getContent()));
+        return discussPostMapper.insertDiscussPost(discussPost);
+    }
+
 
 }

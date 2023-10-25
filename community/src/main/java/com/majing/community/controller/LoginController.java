@@ -1,6 +1,7 @@
 package com.majing.community.controller;
 
 import com.google.code.kaptcha.Producer;
+import com.majing.community.annotation.LoginRequired;
 import com.majing.community.entity.User;
 import com.majing.community.service.UserService;
 import com.majing.community.util.CommunityConstant;
@@ -159,6 +160,7 @@ public class LoginController implements CommunityConstant {
         }
     }
     @RequestMapping(path = "/logout", method = RequestMethod.GET)
+    @LoginRequired
     public String logout(@CookieValue("ticket") String ticket){
         userService.logout(ticket);
         return "redirect:/login";

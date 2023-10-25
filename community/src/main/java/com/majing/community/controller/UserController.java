@@ -1,5 +1,6 @@
 package com.majing.community.controller;
 
+import com.majing.community.annotation.LoginRequired;
 import com.majing.community.service.UserService;
 import com.majing.community.util.CommunityUtil;
 import com.majing.community.util.HostHolder;
@@ -17,10 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.Map;
 
 /**
@@ -47,10 +45,12 @@ public class UserController {
     }
 
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
+    @LoginRequired
     public String getSettingPage(){
         return "site/setting";
     }
-    @RequestMapping(path = "/uploadHeader", method = RequestMethod.POST)
+    @RequestMapping(path = "/uploadHeader", method = {RequestMethod.POST, RequestMethod.GET})
+    @LoginRequired
     public String uploadHeader(MultipartFile multipartFile, Model model){
         if(multipartFile == null){
             model.addAttribute("error", "请选择图片！");
@@ -95,7 +95,8 @@ public class UserController {
             logger.error("读取头像失败：" + e.getMessage());
         }
     }
-    @RequestMapping(value = "/updatePassword", method = RequestMethod.POST)
+    @RequestMapping(value = "/updatePassword", method = {RequestMethod.POST, RequestMethod.GET})
+    @LoginRequired
     public String updatePassword(Model model, String old_password, String new_password){
         if(StringUtils.isBlank(old_password) || StringUtils.isBlank(new_password)){
             throw new IllegalArgumentException("参数不能为空");

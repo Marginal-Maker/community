@@ -34,4 +34,11 @@ public interface DiscussPostService {
      * @created at 2023/10/21 16:05
     */
     List<DiscussPost> getDiscussPostsByPageHelper(Integer userId, Integer offset, Integer limit);
+    /**
+     * 发帖功能
+     * @param discussPost
+     * @return java.lang.Integer
+     * @created at 2023/10/24 15:38
+    */
+    Integer addDiscussPost(DiscussPost discussPost);
 }
