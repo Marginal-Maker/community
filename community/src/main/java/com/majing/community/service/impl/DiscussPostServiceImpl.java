@@ -57,5 +57,9 @@ public class DiscussPostServiceImpl implements DiscussPostService {
         return discussPostMapper.insertDiscussPost(discussPost);
     }
 
+    @Override
+    public DiscussPost getDiscussPost(Integer id) {
+        return discussPostMapper.selectDiscussPostById(id);
+    }
 
 }

@@ -51,5 +51,12 @@ public interface DiscussPostMapper {
      * @created at 2023/10/24 15:07
      */
     Integer insertDiscussPost(DiscussPost discussPost);
+    /**
+     * 根据主键查询对应的帖子
+     * @param id
+     * @return java.lang.Integer
+     * @created at 2023/10/25 13:51
+    */
+    DiscussPost selectDiscussPostById(Integer id);
 
 }
