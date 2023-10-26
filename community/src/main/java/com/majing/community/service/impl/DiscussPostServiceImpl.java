@@ -38,14 +38,6 @@ public class DiscussPostServiceImpl implements DiscussPostService {
     }
 
     @Override
-    public List<DiscussPost> getDiscussPostsByPageHelper(Integer userId, Integer offset, Integer limit) {
-        PageHelper.startPage(offset, limit);
-        List<DiscussPost> discussPostList = discussPostMapper.selectDiscussPostByPageHelper(userId);
-        PageInfo<DiscussPost> discussPostPageInfo = new PageInfo<>(discussPostList);
-        return discussPostPageInfo.getList();
-    }
-
-    @Override
     public Integer addDiscussPost(DiscussPost discussPost) {
         if (discussPost == null){
             throw new IllegalArgumentException("参数不能为空");

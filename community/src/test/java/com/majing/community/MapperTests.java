@@ -1,11 +1,15 @@
 package com.majing.community;
 
+import com.github.pagehelper.PageInfo;
+import com.majing.community.dao.CommentMapper;
 import com.majing.community.dao.DiscussPostMapper;
 import com.majing.community.dao.LoginTicketMapper;
 import com.majing.community.dao.UserMapper;
+import com.majing.community.entity.Comment;
 import com.majing.community.entity.DiscussPost;
 import com.majing.community.entity.LoginTicket;
 import com.majing.community.entity.User;
+import com.majing.community.service.CommentService;
 import com.majing.community.service.DiscussPostService;
 import com.majing.community.util.CommunityUtil;
 
@@ -26,14 +30,16 @@ public class MapperTests {
     private final UserMapper userMapper;
     private final DiscussPostMapper discussPostMapper;
     private final LoginTicketMapper loginTicketMapper;
-    private final DiscussPostService discussPostService;
+    private final CommentService commentService;
+    private final CommentMapper commentMapper;
     private final User user = new User();
     @Autowired
-    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper, LoginTicketMapper loginTicketMapper, DiscussPostService discussPostService) {
+    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper, LoginTicketMapper loginTicketMapper, DiscussPostService discussPostService, CommentService commentService, CommentMapper commentMapper) {
         this.userMapper = userMapper;
         this.discussPostMapper = discussPostMapper;
         this.loginTicketMapper = loginTicketMapper;
-        this.discussPostService = discussPostService;
+        this.commentService = commentService;
+        this.commentMapper = commentMapper;
     }
     @Test
     public void testSelectUser() {
@@ -82,9 +88,20 @@ public class MapperTests {
     }
     @Test
     public void testPageHelper(){
-        List<DiscussPost> discussPostList = discussPostService.getDiscussPostsByPageHelper(null, 1, 1);
-        for(DiscussPost discussPost : discussPostList){
-            System.out.println(discussPost);
+        PageInfo<Comment> pageInfo = commentService.getCommentsByEntity(1, 228, 1, 2);
+        //起始页
+        System.out.println(pageInfo.getPageNum());
+        //每页的数量
+        System.out.println(pageInfo.getPageSize());
+        //总页数
+        System.out.println(pageInfo.getPages());
+        //总条数
+        System.out.println(pageInfo.getTotal());
+        //获取到的数据
+        System.out.println(pageInfo.getList());
+        List<Comment> commentList = commentMapper.selectCommentsByEntity(1, 228);
+        for(Comment comment : commentList){
+            System.out.println(comment);
         }
     }
     @Test

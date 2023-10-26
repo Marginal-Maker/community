@@ -78,8 +78,9 @@
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
-			<version>1.4.1</version>
+			<version>1.4.6</version>
 		</dependency>
+
 		<!--处理Json数据-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
