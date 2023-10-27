@@ -85,6 +85,7 @@ public class DiscussPostController implements CommunityConstant {
             page.setLimit(5);
         }
         page.setPath("/discussPost/detail/" + discussPost_id);
+        //查询帖子id为entity_id的评论
         PageInfo<Comment> commentPageInfo = commentService.getCommentsByEntity(ENTITY_TYPE_POST, discussPost.getId(), page.getCurrent(), page.getLimit());
         page.setRows(discussPost.getCommentCount());
         List<Comment> commentList = commentPageInfo.getList();
@@ -94,6 +95,7 @@ public class DiscussPostController implements CommunityConstant {
                 Map<String, Object> map = new HashMap<>(4);
                 map.put("comment", comment);
                 map.put("user", userService.getUserById(comment.getUserId()));
+                //查询评论id为entity_id的帖子
                 PageInfo<Comment> commentPageInfo1 = commentService.getCommentsByEntity(ENTITY_TYPE_COMMENT, comment.getId(), 0, Integer.MAX_VALUE);
                 List<Map<String,Object>> mapList1 = new ArrayList<>();
                 if(!CollectionUtils.isEmpty(commentPageInfo1.getList())){
@@ -104,6 +106,7 @@ public class DiscussPostController implements CommunityConstant {
                         User target =comment1.getTargetId() == 0 ? null : userService.getUserById(comment1.getTargetId());
                         map1.put("target", target);
                         mapList1.add(map1);
+                        System.out.println(comment);
                     }
                 }
                 map.put("replays", mapList1);

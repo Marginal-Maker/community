@@ -47,4 +47,12 @@ public interface DiscussPostService {
      * @created at 2023/10/25 13:54
      */
     DiscussPost getDiscussPost(Integer id);
+    /**
+     *
+     * @param id
+     * @param commentCount
+     * @return java.lang.Integer
+     * @created at 2023/10/27 12:26
+    */
+    Integer updateCommentCount(Integer id, Integer commentCount);
 }

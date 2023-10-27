@@ -12,5 +12,19 @@ import java.util.List;
  */
 @Mapper
 public interface CommentMapper {
+    /**
+     * 
+     * @param entityType
+     * @param entityId
+     * @return java.util.List<com.majing.community.entity.Comment>
+     * @created at 2023/10/27 12:18 
+    */
     List<Comment> selectCommentsByEntity(Integer entityType, Integer entityId);
+    /**
+     * 
+     * @param comment
+     * @return java.lang.Integer
+     * @created at 2023/10/27 12:18 
+    */
+    Integer insertComment(Comment comment);
 }

@@ -58,5 +58,13 @@ public interface DiscussPostMapper {
      * @created at 2023/10/25 13:51
     */
     DiscussPost selectDiscussPostById(Integer id);
+    /**
+     *
+     * @param id
+     * @param commentCount
+     * @return java.lang.Integer
+     * @created at 2023/10/27 12:23
+    */
+    Integer updateCommentCount(Integer id, Integer commentCount);
 
 }

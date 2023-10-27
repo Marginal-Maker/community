@@ -21,4 +21,11 @@ public interface CommentService {
      * @created at 2023/10/26 15:09
     */
     PageInfo<Comment> getCommentsByEntity(Integer entityType, Integer entityId, Integer pageNum, Integer pageSize);
+    /**
+     *
+     * @param comment
+     * @return java.lang.Integer
+     * @created at 2023/10/27 12:29
+    */
+    Integer addComment(Comment comment);
 }
