@@ -1,16 +1,11 @@
 package com.majing.community;
 
 import com.github.pagehelper.PageInfo;
-import com.majing.community.dao.CommentMapper;
-import com.majing.community.dao.DiscussPostMapper;
-import com.majing.community.dao.LoginTicketMapper;
-import com.majing.community.dao.UserMapper;
-import com.majing.community.entity.Comment;
-import com.majing.community.entity.DiscussPost;
-import com.majing.community.entity.LoginTicket;
-import com.majing.community.entity.User;
+import com.majing.community.dao.*;
+import com.majing.community.entity.*;
 import com.majing.community.service.CommentService;
 import com.majing.community.service.DiscussPostService;
+import com.majing.community.service.MessageService;
 import com.majing.community.util.CommunityUtil;
 
 import org.junit.jupiter.api.Test;
@@ -32,14 +27,16 @@ public class MapperTests {
     private final LoginTicketMapper loginTicketMapper;
     private final CommentService commentService;
     private final CommentMapper commentMapper;
+    private final MessageService messageService;
     private final User user = new User();
     @Autowired
-    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper, LoginTicketMapper loginTicketMapper, DiscussPostService discussPostService, CommentService commentService, CommentMapper commentMapper) {
+    public MapperTests(UserMapper userMapper, DiscussPostMapper discussPostMapper, LoginTicketMapper loginTicketMapper, DiscussPostService discussPostService, CommentService commentService, CommentMapper commentMapper, MessageMapper messageMapper, MessageService messageService) {
         this.userMapper = userMapper;
         this.discussPostMapper = discussPostMapper;
         this.loginTicketMapper = loginTicketMapper;
         this.commentService = commentService;
         this.commentMapper = commentMapper;
+        this.messageService = messageService;
     }
     @Test
     public void testSelectUser() {
@@ -115,6 +112,17 @@ public class MapperTests {
         discussPost.setCommentCount(0);
         discussPost.setScore(0.0);
         System.out.println(discussPostMapper.insertDiscussPost(discussPost));
+    }
+    @Test
+    public void testMessageService(){
+        PageInfo<Message> pageInfo = messageService.getConservations(111, 1, 20);
+        for(Message message : pageInfo.getList()){
+            System.out.println(message);
+        }
+        System.out.println(messageService.getConservationCount(111));
+        System.out.println(messageService.getLetters("111_112", 1, 10));
+        System.out.println(messageService.getLetterCount("111_112"));
+        System.out.println(messageService.getLetterUnreadCount(111, "111_112"));
     }
 
 }
