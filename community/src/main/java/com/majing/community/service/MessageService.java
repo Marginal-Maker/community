@@ -3,6 +3,8 @@ package com.majing.community.service;
 import com.github.pagehelper.PageInfo;
 import com.majing.community.entity.Message;
 
+import java.util.List;
+
 /**
  * @author majing
  * @date 2023-10-31 19:19
@@ -49,4 +51,19 @@ public interface MessageService {
      * @created at 2023/10/31 19:24
     */
     Integer getLetterUnreadCount(Integer userId, String conversationId);
+    /**
+     *
+     * @param message
+     * @return java.lang.Integer
+     * @created at 2023/11/1 18:34
+    */
+    Integer addMessage(Message message);
+    /**
+     *
+     * @param ids
+     * @param status
+     * @return java.lang.Integer
+     * @created at 2023/11/1 18:35
+    */
+    Integer changeStatus(List<Integer> ids, Integer status);
 }

@@ -18,6 +18,7 @@ public interface UserService {
      * @created at 2023/8/2 20:53
     */
     User getUserById(Integer id);
+    User getUserByName(String username);
     /**
      * 用户注册功能
      * @param user

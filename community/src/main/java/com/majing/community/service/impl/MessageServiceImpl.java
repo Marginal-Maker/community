@@ -5,7 +5,9 @@ import com.github.pagehelper.PageInfo;
 import com.majing.community.dao.MessageMapper;
 import com.majing.community.entity.Message;
 import com.majing.community.service.MessageService;
+import com.majing.community.util.SensitiveFilter;
 import org.springframework.stereotype.Service;
+import org.springframework.web.util.HtmlUtils;
 
 import java.util.List;
 
@@ -17,9 +19,11 @@ import java.util.List;
 @Service
 public class MessageServiceImpl implements MessageService {
     private final MessageMapper messageMapper;
+    private final SensitiveFilter sensitiveFilter;
 
-    public MessageServiceImpl(MessageMapper messageMapper) {
+    public MessageServiceImpl(MessageMapper messageMapper, SensitiveFilter sensitiveFilter) {
         this.messageMapper = messageMapper;
+        this.sensitiveFilter = sensitiveFilter;
     }
 
     @Override
@@ -49,5 +53,16 @@ public class MessageServiceImpl implements MessageService {
     @Override
     public Integer getLetterUnreadCount(Integer userId, String conversationId) {
         return messageMapper.selectLetterUnreadCount(userId, conversationId);
+    }
+
+    @Override
+    public Integer addMessage(Message message) {
+        message.setContent(HtmlUtils.htmlEscape(sensitiveFilter.filter(message.getContent())));
+        return messageMapper.insertMessage(message);
+    }
+
+    @Override
+    public Integer changeStatus(List<Integer> ids, Integer status) {
+        return messageMapper.updateStatus(ids, status);
     }
 }
