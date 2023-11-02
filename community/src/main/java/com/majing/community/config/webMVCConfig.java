@@ -1,5 +1,4 @@
 package com.majing.community.config;
-
 import com.majing.community.controller.interceptor.LoginRequiredInterceptor;
 import com.majing.community.controller.interceptor.LoginTicketInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
