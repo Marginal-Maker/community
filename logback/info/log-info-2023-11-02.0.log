@@ -1,0 +1,163 @@
+2023-11-02 11:29:41.430 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 21804 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 11:29:41.432 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 11:29:41.468 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 11:29:41.469 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 11:29:42.317 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-02 11:29:42.323 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-02 11:29:42.324 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-02 11:29:42.324 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-02 11:29:42.366 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-02 11:29:42.367 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 898 ms
+2023-11-02 11:29:42.799 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-02 11:29:42.934 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-02 11:29:42.948 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-02 11:29:42.961 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-02 11:29:42.973 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.865 seconds (process running for 5.307)
+2023-11-02 11:29:47.543 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-02 11:29:47.543 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-02 11:29:47.543 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-11-02 13:49:22.024 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 27552 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 13:49:22.026 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 13:49:22.075 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 13:49:22.076 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 13:49:22.918 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-02 13:49:42.781 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 20820 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 13:49:42.785 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 13:49:42.819 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 13:49:42.819 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 13:49:43.919 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-02 13:49:43.926 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-02 13:49:43.928 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-02 13:49:43.929 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-02 13:49:43.989 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-02 13:49:43.989 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1170 ms
+2023-11-02 13:49:44.610 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-02 13:49:44.792 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-02 13:49:44.806 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-02 13:49:44.821 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-02 13:49:44.828 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 2.437 seconds (process running for 2.793)
+2023-11-02 13:50:00.939 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-02 13:50:00.939 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-02 13:50:00.940 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-11-02 13:50:00.966 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:00]，访问了[com.majing.community.service.impl.UserServiceImpl.getLoginTicket]。
+2023-11-02 13:50:01.100 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.116 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPostRows]。
+2023-11-02 13:50:01.132 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPosts]。
+2023-11-02 13:50:01.142 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.147 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.151 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.154 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.156 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.159 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.163 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.166 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.169 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 13:50:01.172 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 13:50:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:22:54.987 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 16924 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 14:22:54.988 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 14:22:55.015 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 14:22:55.015 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 14:22:55.844 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-02 14:22:55.850 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-02 14:22:55.851 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-02 14:22:55.852 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-02 14:22:55.899 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-02 14:22:55.899 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 883 ms
+2023-11-02 14:22:56.022 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-11-02 14:22:56.031 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-02 14:23:13.155 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 36412 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 14:23:13.157 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 14:23:13.185 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 14:23:13.185 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 14:23:13.982 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-02 14:23:13.987 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-02 14:23:13.991 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-02 14:23:13.991 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-02 14:23:14.030 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-02 14:23:14.030 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 845 ms
+2023-11-02 14:23:14.166 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-11-02 14:23:14.174 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-02 14:23:19.742 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 41872 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 14:23:19.744 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 14:23:19.770 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 14:23:19.770 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 14:23:20.547 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-02 14:23:20.552 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-02 14:23:20.553 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-02 14:23:20.553 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-02 14:23:20.591 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-02 14:23:20.591 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 821 ms
+2023-11-02 14:23:20.713 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-11-02 14:23:20.722 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-02 14:23:55.478 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 15936 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 14:23:55.480 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 14:23:55.511 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 14:23:55.512 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 14:23:56.353 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-02 14:23:56.358 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-02 14:23:56.359 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-02 14:23:56.359 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-02 14:23:56.398 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-02 14:23:56.398 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 886 ms
+2023-11-02 14:23:56.848 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-02 14:23:57.002 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-02 14:23:57.019 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-02 14:23:57.031 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-02 14:23:57.038 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.841 seconds (process running for 2.152)
+2023-11-02 14:24:06.718 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-02 14:24:06.718 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-02 14:24:06.719 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-11-02 14:24:06.744 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getLoginTicket]。
+2023-11-02 14:24:06.857 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.871 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPostRows]。
+2023-11-02 14:24:06.886 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPosts]。
+2023-11-02 14:24:06.899 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.903 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.907 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.911 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.927 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.931 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.936 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.940 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.943 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:06.946 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:24:06]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:24:53.889 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 2064 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-02 14:24:53.890 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-02 14:24:53.923 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-02 14:24:53.923 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-02 14:24:54.706 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-02 14:24:54.710 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-02 14:24:54.711 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-02 14:24:54.712 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-02 14:24:54.745 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-02 14:24:54.746 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 823 ms
+2023-11-02 14:24:55.170 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-02 14:24:55.341 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-02 14:24:55.353 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-02 14:24:55.365 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-02 14:24:55.373 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 1.776 seconds (process running for 2.151)
+2023-11-02 14:25:00.968 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-02 14:25:00.968 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-02 14:25:00.969 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-11-02 14:25:00.993 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:00]，访问了[com.majing.community.service.impl.UserServiceImpl.getLoginTicket]。
+2023-11-02 14:25:01.102 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.116 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPostRows]。
+2023-11-02 14:25:01.130 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPosts]。
+2023-11-02 14:25:01.140 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.144 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.149 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.152 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.156 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.159 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.162 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.165 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.168 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-02 14:25:01.170 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-02 14:25:01]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。

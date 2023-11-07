@@ -9,6 +9,7 @@ import com.majing.community.entity.Page;
 import com.majing.community.entity.User;
 import com.majing.community.service.CommentService;
 import com.majing.community.service.DiscussPostService;
+import com.majing.community.service.LikeService;
 import com.majing.community.service.UserService;
 import com.majing.community.util.CommunityConstant;
 import com.majing.community.util.CommunityUtil;
@@ -37,17 +38,19 @@ public class DiscussPostController implements CommunityConstant {
     private final HostHolder hostHolder;
     private final UserService userService;
     private final CommentService commentService;
+    private final LikeService likeService;
 
     @Autowired
-    public DiscussPostController(DiscussPostService discussPostService, HostHolder hostHolder, UserService userService, CommentMapper commentMapper, CommentService commentService) {
+    public DiscussPostController(DiscussPostService discussPostService, HostHolder hostHolder, UserService userService, CommentMapper commentMapper, CommentService commentService, LikeService likeService) {
         this.discussPostService = discussPostService;
         this.hostHolder = hostHolder;
         this.userService = userService;
         this.commentService = commentService;
+        this.likeService = likeService;
     }
 
     @LoginRequired
-    @RequestMapping(value = "/add", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(path = "/add", method = {RequestMethod.POST, RequestMethod.GET})
     @ResponseBody
     public String addDiscussPost(String title, String content) {
         User user = hostHolder.getUser();
@@ -70,18 +73,21 @@ public class DiscussPostController implements CommunityConstant {
         return CommunityUtil.getJSONString(0, "发布成功");
     }
 
-    @LoginRequired
-    @RequestMapping(value = "detail/{discussPost_id}", method = RequestMethod.GET)
+    @RequestMapping(path = "detail/{discussPost_id}", method = RequestMethod.GET)
     public String getDiscussPostDetail(@PathVariable("discussPost_id") Integer discussPost_id, Model model, Page page) {
         DiscussPost discussPost = discussPostService.getDiscussPost(discussPost_id);
         model.addAttribute("discussPost", discussPost);
         User user = userService.getUserById(discussPost.getUserId());
         model.addAttribute("user", user);
-        if(page.getCurrent() == null){
+        Long postLikeCount = likeService.likeCount(ENTITY_TYPE_POST, discussPost_id);
+        Integer postLikeStatus = hostHolder.getUser() == null ? 0 : likeService.entityLikeType(hostHolder.getUser().getId(), ENTITY_TYPE_POST, discussPost_id);
+        model.addAttribute("postLikeCount", postLikeCount);
+        model.addAttribute("postLikeStatus", postLikeStatus);
+        if (page.getCurrent() == null) {
             page.setCurrent(1);
         }
         //默认每页显示10页
-        if(page.getLimit()==null){
+        if (page.getLimit() == null) {
             page.setLimit(5);
         }
         page.setPath("/discussPost/detail/" + discussPost_id);
@@ -89,24 +95,31 @@ public class DiscussPostController implements CommunityConstant {
         PageInfo<Comment> commentPageInfo = commentService.getCommentsByEntity(ENTITY_TYPE_POST, discussPost.getId(), page.getCurrent(), page.getLimit());
         page.setRows(discussPost.getCommentCount());
         List<Comment> commentList = commentPageInfo.getList();
-        List<Map<String,Object>> mapList = new ArrayList<>();
-        if(!CollectionUtils.isEmpty(commentList)){
-            for(Comment comment : commentList){
+        List<Map<String, Object>> mapList = new ArrayList<>();
+        if (!CollectionUtils.isEmpty(commentList)) {
+            for (Comment comment : commentList) {
                 Map<String, Object> map = new HashMap<>(4);
                 map.put("comment", comment);
                 map.put("user", userService.getUserById(comment.getUserId()));
+                postLikeCount = likeService.likeCount(ENTITY_TYPE_COMMENT, comment.getId());
+                postLikeStatus = hostHolder.getUser() == null ? 0 : likeService.entityLikeType(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, comment.getId());
+                map.put("postLikeCount", postLikeCount);
+                map.put("postLikeStatus", postLikeStatus);
                 //查询评论id为entity_id的帖子
                 PageInfo<Comment> commentPageInfo1 = commentService.getCommentsByEntity(ENTITY_TYPE_COMMENT, comment.getId(), 0, Integer.MAX_VALUE);
-                List<Map<String,Object>> mapList1 = new ArrayList<>();
-                if(!CollectionUtils.isEmpty(commentPageInfo1.getList())){
-                    for(Comment comment1 : commentPageInfo1.getList()){
+                List<Map<String, Object>> mapList1 = new ArrayList<>();
+                if (!CollectionUtils.isEmpty(commentPageInfo1.getList())) {
+                    for (Comment comment1 : commentPageInfo1.getList()) {
                         Map<String, Object> map1 = new HashMap<>(3);
                         map1.put("user", userService.getUserById(comment1.getUserId()));
                         map1.put("replay", comment1);
-                        User target =comment1.getTargetId() == 0 ? null : userService.getUserById(comment1.getTargetId());
+                        User target = comment1.getTargetId() == 0 ? null : userService.getUserById(comment1.getTargetId());
                         map1.put("target", target);
+                        postLikeCount = likeService.likeCount(ENTITY_TYPE_COMMENT, comment1.getId());
+                        postLikeStatus = hostHolder.getUser() == null ? 0 : likeService.entityLikeType(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, comment1.getId());
+                        map1.put("postLikeCount", postLikeCount);
+                        map1.put("postLikeStatus", postLikeStatus);
                         mapList1.add(map1);
-                        System.out.println(comment);
                     }
                 }
                 map.put("replays", mapList1);
@@ -114,7 +127,7 @@ public class DiscussPostController implements CommunityConstant {
                 mapList.add(map);
             }
         }
-        model.addAttribute("mapList",mapList);
+        model.addAttribute("mapList", mapList);
         return "site/discuss-detail";
     }
 

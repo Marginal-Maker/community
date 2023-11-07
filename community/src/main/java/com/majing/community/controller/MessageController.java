@@ -64,7 +64,7 @@ public class MessageController {
     }
 
     @LoginRequired
-    @RequestMapping(value = "/letter/list/{conversationId}", method = RequestMethod.GET)
+    @RequestMapping(path = "/letter/list/{conversationId}", method = RequestMethod.GET)
     public String getLetterDetail(@PathVariable("conversationId") String conversationId, Page page, Model model) {
         if (page.getCurrent() == null) {
             page.setCurrent(1);
@@ -113,7 +113,7 @@ public class MessageController {
     }
 
     @LoginRequired
-    @RequestMapping(value = "/letter/send", method = RequestMethod.POST)
+    @RequestMapping(path = "/letter/send", method = RequestMethod.POST)
     @ResponseBody
     public String sendMessage(String toName, String content) {
         User target = userService.getUserByName(toName);

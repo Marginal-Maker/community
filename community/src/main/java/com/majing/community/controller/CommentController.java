@@ -27,7 +27,7 @@ public class CommentController {
         this.hostHolder = hostHolder;
     }
     @LoginRequired
-    @RequestMapping(value = "/add/{discussPostId}", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(path = "/add/{discussPostId}", method = {RequestMethod.POST, RequestMethod.GET})
     public String addComment(@PathVariable("discussPostId") Integer discussPostId, Comment comment){
         comment.setUserId(hostHolder.getUser().getId());
         comment.setStatus(0);

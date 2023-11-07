@@ -42,7 +42,7 @@ public class DiscussPostServiceImpl implements DiscussPostService {
         if (discussPost == null){
             throw new IllegalArgumentException("参数不能为空");
         }
-        discussPost.setContent(HtmlUtils.htmlEscape(discussPost.getTitle()));
+        discussPost.setTitle(HtmlUtils.htmlEscape(discussPost.getTitle()));
         discussPost.setContent(HtmlUtils.htmlEscape(discussPost.getContent()));
         discussPost.setTitle(sensitiveFilter.filter(discussPost.getTitle()));
         discussPost.setContent(sensitiveFilter.filter(discussPost.getContent()));

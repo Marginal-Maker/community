@@ -1,0 +1,116 @@
+2023-11-06 16:17:49.332 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 7932 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:17:49.335 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:17:49.379 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-06 16:17:49.379 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-06 16:17:49.898 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:17:49.900 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:17:49.920 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:17:50.536 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-06 16:17:50.542 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-06 16:17:50.544 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-06 16:17:50.544 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-06 16:17:50.587 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-06 16:17:50.587 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1207 ms
+2023-11-06 16:17:51.321 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:17:51.555 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-06 16:17:51.568 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-06 16:17:51.600 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-06 16:17:51.607 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 2.633 seconds (process running for 3.228)
+2023-11-06 16:17:55.743 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 90704 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:17:55.744 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:17:56.382 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:17:56.385 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:17:56.410 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:17:59.294 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:17:59.964 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.567 seconds (process running for 5.321)
+2023-11-06 16:34:43.489 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 87536 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:34:43.491 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:34:44.077 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:34:44.079 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:34:44.113 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:34:47.046 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:34:47.750 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.583 seconds (process running for 5.179)
+2023-11-06 16:35:08.402 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 90272 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:35:08.403 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:35:09.005 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:35:09.008 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:35:09.033 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:35:11.827 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:35:12.454 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.402 seconds (process running for 5.102)
+2023-11-06 16:36:16.031 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 90216 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:36:16.033 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:36:16.622 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:36:16.624 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:36:16.646 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:36:19.453 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:36:20.095 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.405 seconds (process running for 5.041)
+2023-11-06 16:40:49.385 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 89296 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:40:49.387 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:40:49.958 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:40:49.961 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:40:49.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:40:52.679 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:40:53.313 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.252 seconds (process running for 4.854)
+2023-11-06 16:44:34.247 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 89688 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:44:34.249 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:44:34.806 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:44:34.809 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:44:34.830 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:44:37.526 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:44:38.155 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.251 seconds (process running for 4.859)
+2023-11-06 16:48:30.927 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 87480 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:48:30.928 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:48:31.540 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:48:31.542 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:48:31.562 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:48:34.409 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:48:35.073 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.485 seconds (process running for 5.109)
+2023-11-06 16:49:06.170 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 92020 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:49:06.171 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:49:06.793 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:49:06.795 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:49:06.817 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:49:09.572 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:49:10.228 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.39 seconds (process running for 4.971)
+2023-11-06 16:49:33.596 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 91856 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:49:33.597 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:49:34.190 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:49:34.194 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:49:34.217 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:49:36.957 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:49:37.582 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.328 seconds (process running for 4.977)
+2023-11-06 16:50:22.601 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 22604 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:50:22.602 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:50:23.170 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:50:23.171 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:50:23.192 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:50:25.774 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:50:26.436 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.178 seconds (process running for 4.811)
+2023-11-06 16:50:54.163 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 91796 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:50:54.164 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:50:54.709 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:50:54.711 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:50:54.734 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:50:57.482 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:50:58.153 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.301 seconds (process running for 4.939)
+2023-11-06 16:51:35.833 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 91848 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:51:35.834 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:51:36.390 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:51:36.392 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:51:36.413 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:51:39.133 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:51:39.810 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.31 seconds (process running for 4.883)
+2023-11-06 16:52:13.037 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 91640 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:52:13.040 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:52:13.597 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:52:13.600 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:52:13.622 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:52:16.587 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:52:17.313 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.621 seconds (process running for 5.223)
+2023-11-06 16:53:15.048 [main] INFO  com.majing.community.RedisTest - Starting RedisTest using Java 17.0.8 with PID 87600 (started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-06 16:53:15.049 [main] INFO  com.majing.community.RedisTest - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 16:53:15.654 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-06 16:53:15.656 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-06 16:53:15.681 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-11-06 16:53:18.591 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-06 16:53:19.250 [main] INFO  com.majing.community.RedisTest - Started RedisTest in 4.547 seconds (process running for 5.174)

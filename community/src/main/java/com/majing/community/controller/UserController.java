@@ -1,6 +1,8 @@
 package com.majing.community.controller;
 
 import com.majing.community.annotation.LoginRequired;
+import com.majing.community.entity.User;
+import com.majing.community.service.LikeService;
 import com.majing.community.service.UserService;
 import com.majing.community.util.CommunityUtil;
 import com.majing.community.util.HostHolder;
@@ -32,6 +34,7 @@ public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     private final UserService userService;
     private final HostHolder hostHolder;
+    private final LikeService likeService;
     @Value("${community.path.upload}")
     private String uploadPath;
     @Value("${community.path.domain}")
@@ -39,9 +42,10 @@ public class UserController {
     @Value("${server.servlet.context-path}")
     private String contextPath;
     @Autowired
-    public UserController(UserService userService, HostHolder hostHolder) {
+    public UserController(UserService userService, HostHolder hostHolder, LikeService likeService) {
         this.userService = userService;
         this.hostHolder = hostHolder;
+        this.likeService = likeService;
     }
 
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -79,7 +83,7 @@ public class UserController {
         userService.settingHeader(hostHolder.getUser().getId(), headUrl);
         return "redirect:/index";
     }
-    @RequestMapping(value = "/header/{fileName}", method = RequestMethod.GET)
+    @RequestMapping(path = "/header/{fileName}", method = RequestMethod.GET)
     public void getHeader(@PathVariable("fileName") String fileName, HttpServletResponse httpServletResponse){
         fileName = uploadPath + "/" + fileName;
         String suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
@@ -95,7 +99,7 @@ public class UserController {
             logger.error("读取头像失败：" + e.getMessage());
         }
     }
-    @RequestMapping(value = "/updatePassword", method = {RequestMethod.POST, RequestMethod.GET})
+    @RequestMapping(path = "/updatePassword", method = {RequestMethod.POST, RequestMethod.GET})
     @LoginRequired
     public String updatePassword(Model model, String old_password, String new_password){
         if(StringUtils.isBlank(old_password) || StringUtils.isBlank(new_password)){
@@ -111,5 +115,17 @@ public class UserController {
             return "site/setting";
         }
     }
-
+    @RequestMapping(path = "/profiles/{userId}", method = RequestMethod.GET)
+    public String getProfilePage(@PathVariable("userId") Integer userId, Model model){
+        User user = userService.getUserById(userId);
+        if(user == null){
+            throw new RuntimeException("该用户不存在");
+        }
+        //用户
+        model.addAttribute("user", user);
+        Long result = likeService.userLikeCount(userId);
+        //点赞数量
+        model.addAttribute("userLikeCount", result);
+        return "/site/profile";
+    }
 }

@@ -4,14 +4,14 @@ import com.majing.community.entity.DiscussPost;
 import com.majing.community.entity.Page;
 import com.majing.community.entity.User;
 import com.majing.community.service.DiscussPostService;
+import com.majing.community.service.LikeService;
 import com.majing.community.service.UserService;
+import com.majing.community.util.CommunityConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,13 +24,15 @@ import java.util.Map;
  * @Description 开发社区首页控制层
  */
 @Controller
-public class IndexController {
+public class IndexController implements CommunityConstant {
     private final UserService userService;
     private final DiscussPostService discussPostService;
+    private final LikeService likeService;
     @Autowired
-    public IndexController(UserService userService, DiscussPostService discussPostService) {
+    public IndexController(UserService userService, DiscussPostService discussPostService, LikeService likeService) {
         this.userService = userService;
         this.discussPostService = discussPostService;
+        this.likeService = likeService;
     }
     /**
      * 首页显示discussPost
@@ -63,13 +65,15 @@ public class IndexController {
                 map.put("discussPost", discussPost);
                 User user = userService.getUserById(discussPost.getUserId());
                 map.put("user", user);
+                Long count = likeService.likeCount(ENTITY_TYPE_POST, discussPost.getId());
+                map.put("likeCount", count);
                 userDiscussPosts.add(map);
             }
         }
         model.addAttribute("userDiscussPosts", userDiscussPosts);
         return "index";
     }
-    @RequestMapping(value = "/error", method = RequestMethod.GET)
+    @RequestMapping(path = "/error", method = RequestMethod.GET)
     public String getErrorPage(){
         return  "/error/500";
     }
