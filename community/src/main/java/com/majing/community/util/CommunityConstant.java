@@ -34,4 +34,8 @@ public interface CommunityConstant {
 
     Integer ENTITY_TYPE_POST = 1;
     Integer ENTITY_TYPE_COMMENT = 2;
+
+    String EVENT_COMMENT = "comment";
+    String EVENT_LIKE = "like";
+    String EVENT_FOLLOW = "follow";
 }

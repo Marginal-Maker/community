@@ -28,4 +28,11 @@ public interface CommentService {
      * @created at 2023/10/27 12:29
     */
     Integer addComment(Comment comment);
+    /**
+     *
+     * @param id
+     * @return com.majing.community.entity.Comment
+     * @created at 2023/11/15 13:15
+    */
+    Comment findCommentById(Integer id);
 }

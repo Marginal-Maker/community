@@ -65,4 +65,24 @@ public class MessageServiceImpl implements MessageService {
     public Integer changeStatus(List<Integer> ids, Integer status) {
         return messageMapper.updateStatus(ids, status);
     }
+    public Message findLatestNotice(Integer userId, String topic){
+        return messageMapper.selectLatestNotice(userId, topic);
+    }
+
+    @Override
+    public Integer findNoticeCount(Integer userId, String topic) {
+        return messageMapper.selectNoticeCount(userId, topic);
+    }
+
+    @Override
+    public Integer findUnreadNoticeCount(Integer userId, String topic) {
+        return messageMapper.selectUnreadNoticeCount(userId, topic);
+    }
+
+    @Override
+    public PageInfo<Message> findNotices(Integer userId, String topic, Integer pageCurrent, Integer limit) {
+        PageHelper.startPage(pageCurrent, limit);
+        List<Message> messageList = messageMapper.selectNotices(userId, topic);
+        return new PageInfo<>(messageList);
+    }
 }

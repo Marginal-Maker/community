@@ -2,6 +2,7 @@ package com.majing.community.dao;
 
 import com.majing.community.entity.Message;
 import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 
 /**
@@ -56,19 +57,47 @@ public interface MessageMapper {
      * @created at 2023/10/31 16:21
      */
     Integer selectLetterUnreadCount(Integer userId, String conversationId);
+
     /**
-     *
      * @param message
      * @return java.lang.Integer
      * @created at 2023/11/1 18:24
-    */
+     */
     Integer insertMessage(Message message);
+
     /**
-     *
      * @param ids
      * @param status
      * @return java.lang.Integer
      * @created at 2023/11/1 18:27
-    */
+     */
     Integer updateStatus(List<Integer> ids, Integer status);
+
+    /**
+     * 查询最新的消息
+     *
+     * @param userId
+     * @param topic
+     * @return com.majing.community.entity.Message
+     * @created at 2023/11/16 13:41
+     */
+    Message selectLatestNotice(Integer userId, String topic);
+
+    /**
+     * @param userId
+     * @param topic
+     * @return java.lang.Integer
+     * @created at 2023/11/16 13:41
+     */
+    Integer selectNoticeCount(Integer userId, String topic);
+
+    /**
+     * @param userId
+     * @param topic
+     * @return java.lang.Integer
+     * @created at 2023/11/16 13:41
+     */
+    Integer selectUnreadNoticeCount(Integer userId, String topic);
+
+    List<Message> selectNotices(Integer userId, String topic);
 }

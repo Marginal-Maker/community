@@ -9,6 +9,7 @@ import org.apache.ibatis.annotations.*;
  * @Description 登录凭证表的操作
  */
 @Mapper
+@Deprecated
 public interface LoginTicketMapper {
     /**
      * 插入登录凭证

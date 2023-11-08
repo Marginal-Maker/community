@@ -5,7 +5,10 @@ import com.majing.community.annotation.LoginRequired;
 import com.majing.community.entity.User;
 import com.majing.community.service.UserService;
 import com.majing.community.util.CommunityConstant;
+import com.majing.community.util.CommunityUtil;
+import com.majing.community.util.RedisKeyUtil;
 import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.apache.commons.lang3.StringUtils;
@@ -13,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.CollectionUtils;
@@ -26,6 +30,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author majing
@@ -33,17 +38,19 @@ import java.util.Map;
  * @Description 登录注册页面
  */
 @Controller
-public class LoginController implements CommunityConstant {
+public class LoginController implements CommunityConstant{
     private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
     private final UserService userService;
     private final Producer kaptchaProducer;  //根据配置类中的方法名注入
+    private final RedisTemplate<String , Object> redisTemplate;
 
     @Value("${server.servlet.context-path}")
     private String contextPath;
     @Autowired
-    public LoginController(UserService userService, Producer kaptchaProducer) {
+    public LoginController(UserService userService, Producer kaptchaProducer, RedisTemplate<String, Object> redisTemplate) {
         this.userService = userService;
         this.kaptchaProducer = kaptchaProducer;
+        this.redisTemplate = redisTemplate;
     }
     /**
      * 返回注册的页面地址
@@ -116,6 +123,30 @@ public class LoginController implements CommunityConstant {
      * @created at 2023/9/13 14:08
     */
     @RequestMapping(path = "/kaptcha", method = RequestMethod.GET)
+    public void getKaptcha(HttpServletResponse httpServletResponse){
+        //生成验证码
+        String text = kaptchaProducer.createText();
+        BufferedImage bufferedImage = kaptchaProducer.createImage(text);
+        //生成验证码的归属key
+        String kaptchaOwner = CommunityUtil.generateUUID();
+        Cookie cookie = new Cookie("kaptchaOwner", kaptchaOwner);
+        cookie.setPath(contextPath);
+        cookie.setMaxAge(60);
+        httpServletResponse.addCookie(cookie);
+        //将验证码存入redis
+        String kaptchaKey = RedisKeyUtil.getKaptcha(kaptchaOwner);
+        redisTemplate.opsForValue().set(kaptchaKey, text, 60, TimeUnit.SECONDS);
+        //指定传入格式
+        httpServletResponse.setContentType("image/png");
+        try {
+            //实例化一个字节输出流对象
+            OutputStream outputStream = httpServletResponse.getOutputStream();
+            ImageIO.write(bufferedImage, "png", outputStream);
+        } catch (IOException e) {
+            logger.error("响应验证码失败：" + e.getMessage());
+        }
+    }
+    /*
     public void getKaptcha(HttpServletResponse httpServletResponse, HttpSession session){
         //生成验证码
         String text = kaptchaProducer.createText();
@@ -131,14 +162,19 @@ public class LoginController implements CommunityConstant {
         } catch (IOException e) {
             logger.error("响应验证码失败：" + e.getMessage());
         }
-    }
+    }*/
     @RequestMapping(path = "/login", method = RequestMethod.POST)
-    public String login(Model model, String username, String password, String code, Boolean rememberMe, HttpSession httpSession, HttpServletResponse httpServletResponse){
+    public String login(Model model, String username, String password, String code, Boolean rememberMe, @CookieValue(value = "kaptchaOwner", required = false) String kaptchaOwner, HttpSession httpSession, HttpServletResponse httpServletResponse){
         if(rememberMe == null){
             rememberMe = false;
         }
         //判断验证码是否正确
-        String kaptcha = (String) httpSession.getAttribute("kaptcha");
+        //String kaptcha = (String) httpSession.getAttribute("kaptcha");
+        String kaptcha = null;
+        if(StringUtils.isNotBlank(kaptchaOwner)){
+            String kaptchaKey = RedisKeyUtil.getKaptcha(kaptchaOwner);
+            kaptcha = (String) redisTemplate.opsForValue().get(kaptchaKey);
+        }
         if(StringUtils.isBlank(kaptcha) || StringUtils.isBlank(code) || !kaptcha.equalsIgnoreCase(code)){
             model.addAttribute("codeMessage", "验证码不正确");
             return "site/login";

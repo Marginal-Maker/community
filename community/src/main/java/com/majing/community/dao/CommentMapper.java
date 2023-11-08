@@ -27,4 +27,11 @@ public interface CommentMapper {
      * @created at 2023/10/27 12:18 
     */
     Integer insertComment(Comment comment);
+    /**
+     * 
+     * @param id
+     * @return com.majing.community.entity.Comment
+     * @created at 2023/11/15 13:17
+    */
+    Comment selectCommentById(Integer id);
 }

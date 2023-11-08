@@ -1,20 +1,17 @@
 package com.majing.community.service.impl;
 
-import com.majing.community.dao.LoginTicketMapper;
 import com.majing.community.dao.UserMapper;
 import com.majing.community.entity.LoginTicket;
 import com.majing.community.entity.User;
 import com.majing.community.service.UserService;
-import com.majing.community.util.CommunityUtil;
-import com.majing.community.util.MailClient;
-import com.majing.community.util.RegularExpressionUtil;
+import com.majing.community.util.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-import com.majing.community.util.CommunityConstant;
 
 import java.util.*;
 
@@ -28,17 +25,19 @@ public class UserServiceImpl implements UserService, CommunityConstant {
     private final UserMapper userMapper;
     private final MailClient mailClient;
     private final TemplateEngine templateEngine;
-    private final LoginTicketMapper loginTicketMapper;
+    private final RedisTemplate<String, Object> redisTemplate;
+    //private final LoginTicketMapper loginTicketMapper;
     @Value("${community.path.domain}")
     private String domain;
     @Value("${server.servlet.context-path}")
     private String contextPath;
     @Autowired
-    public UserServiceImpl(UserMapper userMapper, MailClient mailClient, TemplateEngine templateEngine, LoginTicketMapper loginTicketMapper) {
+    public UserServiceImpl(UserMapper userMapper, MailClient mailClient, TemplateEngine templateEngine, /*, LoginTicketMapper loginTicketMapper*/RedisTemplate<String, Object> redisTemplate) {
         this.userMapper = userMapper;
         this.mailClient = mailClient;
         this.templateEngine = templateEngine;
-        this.loginTicketMapper = loginTicketMapper;
+        //this.loginTicketMapper = loginTicketMapper;
+        this.redisTemplate = redisTemplate;
     }
     @Override
     public User getUserById(Integer id) {
@@ -157,16 +156,26 @@ public class UserServiceImpl implements UserService, CommunityConstant {
         loginTicket.setStatus(0);
         //凭证过期时间，退出登录时凭证强制过期
         loginTicket.setExpired(new Date(System.currentTimeMillis() + expire.longValue() * 1000));
-        loginTicketMapper.insertLoginTicket(loginTicket);
+        //loginTicketMapper.insertLoginTicket(loginTicket);
+        String ticketKey = RedisKeyUtil.getTicket(loginTicket.getTicket());
+        redisTemplate.opsForValue().set(ticketKey, loginTicket);
         //返回凭证给controller层保存到cookie中，之后的请求都根据cookie传回的凭证判断是哪一个用户。本质上还是cookie-session，不是tooken
         map.put("ticket", loginTicket.getTicket());
         return map;
     }
     public void logout(String ticket){
-        loginTicketMapper.updateStatus(ticket, 1);
+        //loginTicketMapper.updateStatus(ticket, 1);
+        String ticketKey = RedisKeyUtil.getTicket(ticket);
+        LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(ticketKey);
+        if(loginTicket != null){
+            loginTicket.setStatus(1);
+            redisTemplate.opsForValue().set(ticketKey, loginTicket);
+        }
     }
     public LoginTicket getLoginTicket(String ticket){
-        return loginTicketMapper.selectByTicket(ticket);
+        //return loginTicketMapper.selectByTicket(ticket);
+        String ticketKey = RedisKeyUtil.getTicket(ticket);
+        return (LoginTicket) redisTemplate.opsForValue().get(ticketKey);
     }
 
     @Override
