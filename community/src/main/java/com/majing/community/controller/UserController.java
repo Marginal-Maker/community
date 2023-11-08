@@ -2,6 +2,7 @@ package com.majing.community.controller;
 
 import com.majing.community.annotation.LoginRequired;
 import com.majing.community.entity.User;
+import com.majing.community.service.FollowService;
 import com.majing.community.service.LikeService;
 import com.majing.community.service.UserService;
 import com.majing.community.util.CommunityUtil;
@@ -35,6 +36,7 @@ public class UserController {
     private final UserService userService;
     private final HostHolder hostHolder;
     private final LikeService likeService;
+    private final FollowService followService;
     @Value("${community.path.upload}")
     private String uploadPath;
     @Value("${community.path.domain}")
@@ -42,10 +44,12 @@ public class UserController {
     @Value("${server.servlet.context-path}")
     private String contextPath;
     @Autowired
-    public UserController(UserService userService, HostHolder hostHolder, LikeService likeService) {
+    public UserController(UserService userService, HostHolder hostHolder, LikeService likeService, FollowService followService) {
         this.userService = userService;
         this.hostHolder = hostHolder;
         this.likeService = likeService;
+        this.followService = followService;
+
     }
 
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -126,6 +130,16 @@ public class UserController {
         Long result = likeService.userLikeCount(userId);
         //点赞数量
         model.addAttribute("userLikeCount", result);
+        Long followed = followService.findFollowed(userId, 3);
+        model.addAttribute("followedCount", followed);
+        Long follower = followService.findFollower(userId, 3);
+        model.addAttribute("followerCount", follower);
+        Boolean status = false;
+        if(hostHolder.getUser() != null) {
+            status = followService.hasFollow(hostHolder.getUser().getId(), userId, 3);
+        }
+        model.addAttribute("followStatus", status);
         return "/site/profile";
+
     }
 }

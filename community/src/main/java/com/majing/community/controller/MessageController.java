@@ -36,7 +36,6 @@ public class MessageController {
         this.userService = userService;
     }
 
-    @LoginRequired
     @RequestMapping(path = "/conversation/list", method = RequestMethod.GET)
     public String getLetterList(Model model, Page page) {
         if (page.getCurrent() == null) {
@@ -63,7 +62,6 @@ public class MessageController {
         return "/site/letter";
     }
 
-    @LoginRequired
     @RequestMapping(path = "/letter/list/{conversationId}", method = RequestMethod.GET)
     public String getLetterDetail(@PathVariable("conversationId") String conversationId, Page page, Model model) {
         if (page.getCurrent() == null) {
@@ -85,7 +83,9 @@ public class MessageController {
         model.addAttribute("letters", mapList);
         model.addAttribute("target", getLetterTarget(conversationId));
         List<Integer> ids = getLetterIds(messagePageInfo.getList());
-        messageService.changeStatus(ids, 1);
+        if(!CollectionUtils.isEmpty(ids)) {
+            messageService.changeStatus(ids, 1);
+        }
         return "/site/letter-detail";
     }
 
@@ -112,7 +112,6 @@ public class MessageController {
         }
     }
 
-    @LoginRequired
     @RequestMapping(path = "/letter/send", method = RequestMethod.POST)
     @ResponseBody
     public String sendMessage(String toName, String content) {
