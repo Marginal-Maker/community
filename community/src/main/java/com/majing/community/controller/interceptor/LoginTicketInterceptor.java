@@ -1,5 +1,4 @@
 package com.majing.community.controller.interceptor;
-
 import com.majing.community.entity.LoginTicket;
 import com.majing.community.entity.User;
 import com.majing.community.service.UserService;

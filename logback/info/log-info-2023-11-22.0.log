@@ -1,0 +1,557 @@
+2023-11-22 14:37:57.185 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 90984 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-22 14:37:57.188 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-22 14:37:57.221 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 14:37:57.221 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 14:37:58.095 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-22 14:37:58.096 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-22 14:37:58.112 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-11-22 14:37:58.619 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-22 14:37:58.626 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-22 14:37:58.628 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-22 14:37:58.628 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-22 14:37:58.679 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-22 14:37:58.679 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1457 ms
+2023-11-22 14:37:59.340 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-22 14:37:59.582 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-22 14:37:59.619 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-22 14:37:59.631 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-22 14:37:59.657 [restartedMain] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-11-22 14:37:59.710 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2023-11-22 14:37:59.711 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2023-11-22 14:37:59.711 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1700635079709
+2023-11-22 14:37:59.712 [restartedMain] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2023-11-22 14:37:59.724 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 2.826 seconds (process running for 3.253)
+2023-11-22 14:37:59.848 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:37:59.957 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:00.066 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:00.304 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:00.663 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:01.313 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:02.174 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:03.242 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:04.352 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:05.518 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:06.479 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:07.522 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:08.624 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:09.577 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:10.454 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:11.342 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:12.319 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:13.522 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:14.606 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:15.596 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:16.682 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:17.599 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:18.741 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:19.811 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:20.724 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:21.810 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:22.834 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:23.992 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:24.811 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:25.953 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:26.985 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:28.034 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:28.996 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:30.066 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:31.041 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:31.925 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:32.776 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:33.923 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:35.004 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:36.089 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:37.074 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:38.053 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:39.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:40.385 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:41.544 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:42.613 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:43.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:45.017 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:46.056 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:46.960 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:48.190 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 14:38:48.362 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-11-22 14:38:48.362 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-22 14:38:48.362 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2023-11-22 14:38:48.363 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-11-22 14:38:48.363 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-22 14:38:48.363 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-11-22 14:38:48.363 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-22 14:38:48.363 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-11-22 14:38:48.366 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2023-11-22 14:38:48.366 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - community-consumer-group: Consumer stopped
+2023-11-22 15:36:06.147 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 78144 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-22 15:36:06.149 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:36:06.188 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 15:36:06.188 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 15:36:07.041 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-22 15:36:07.042 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-22 15:36:07.060 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-11-22 15:36:07.701 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:36:07.710 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-22 15:36:07.712 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-22 15:36:07.712 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-22 15:36:07.765 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-22 15:36:07.766 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1578 ms
+2023-11-22 15:36:08.605 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-22 15:36:08.904 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-22 15:36:08.948 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-22 15:36:08.968 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-22 15:36:09.003 [restartedMain] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-11-22 15:36:09.057 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2023-11-22 15:36:09.059 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2023-11-22 15:36:09.059 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1700638569057
+2023-11-22 15:36:09.061 [restartedMain] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2023-11-22 15:36:09.073 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 3.264 seconds (process running for 3.744)
+2023-11-22 15:36:09.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:09.323 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:09.427 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:09.597 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:10.004 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:10.817 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:11.840 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:12.744 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:13.948 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:14.987 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:16.019 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:16.881 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:17.981 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:18.964 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 15:36:19.464 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-11-22 15:36:19.464 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-22 15:36:19.464 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2023-11-22 15:36:19.464 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-11-22 15:36:19.464 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-22 15:36:19.465 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-11-22 15:36:19.465 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-22 15:36:19.465 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-11-22 15:36:19.466 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2023-11-22 15:36:19.467 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - community-consumer-group: Consumer stopped
+2023-11-22 17:32:24.941 [restartedMain] INFO  com.majing.community.CommunityApplication - Starting CommunityApplication using Java 17.0.8 with PID 81444 (D:\Program Files (x86)\Java\IdeaProjects\community\community\target\classes started by majin in D:\Program Files (x86)\Java\IdeaProjects\community\community)
+2023-11-22 17:32:24.943 [restartedMain] INFO  com.majing.community.CommunityApplication - No active profile set, falling back to 1 default profile: "default"
+2023-11-22 17:32:24.975 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 17:32:24.975 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 17:32:25.622 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-22 17:32:25.624 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-22 17:32:25.643 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-11-22 17:32:26.345 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-22 17:32:26.351 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-22 17:32:26.353 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-22 17:32:26.353 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-11-22 17:32:26.410 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+2023-11-22 17:32:26.411 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1436 ms
+2023-11-22 17:32:27.419 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-11-22 17:32:27.700 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-11-22 17:32:27.740 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-11-22 17:32:27.755 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-11-22 17:32:27.794 [restartedMain] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-11-22 17:32:27.868 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 3.4.1
+2023-11-22 17:32:27.869 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 8a516edc2755df89
+2023-11-22 17:32:27.869 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1700645547867
+2023-11-22 17:32:27.873 [restartedMain] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, follow, like
+2023-11-22 17:32:27.885 [restartedMain] INFO  com.majing.community.CommunityApplication - Started CommunityApplication in 3.277 seconds (process running for 3.81)
+2023-11-22 17:32:28.137 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:28.248 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:28.355 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:28.588 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:29.065 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:29.854 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:30.892 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:32.066 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:33.248 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:34.273 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:35.171 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:36.327 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:37.282 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:38.148 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:39.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:40.302 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:41.392 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:42.479 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:43.325 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:43.568 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/community] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 17:32:43.568 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-22 17:32:43.569 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-11-22 17:32:43.602 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:43]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPostRows]。
+2023-11-22 17:32:43.887 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:43]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPosts]。
+2023-11-22 17:32:43.896 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:43]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:43.902 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:43]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.168 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.174 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.175 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.178 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.179 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.181 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.182 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.185 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.186 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.191 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.192 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.196 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.197 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.201 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.202 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.204 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.205 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:32:44.208 [http-nio-8080-exec-1] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:32:44]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:32:44.328 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:45.173 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:46.370 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:47.329 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:48.581 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:49.602 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:50.747 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:51.718 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:52.608 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:53.475 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:54.378 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:55.292 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:56.391 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:57.560 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:58.618 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:32:59.535 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:00.515 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:01.551 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:02.768 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:03.748 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:04.227 [http-nio-8080-exec-5] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:04]，访问了[com.majing.community.service.impl.UserServiceImpl.login]。
+2023-11-22 17:33:04.789 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:05.964 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:06.806 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:08.009 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:09.079 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:10.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:11.391 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:12.310 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:13.398 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:14.372 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:14.523 [http-nio-8080-exec-2] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:14]，访问了[com.majing.community.service.impl.UserServiceImpl.login]。
+2023-11-22 17:33:15.395 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:16.375 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:17.587 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:18.707 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:19.927 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:20.780 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:21.919 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:22.812 [http-nio-8080-exec-9] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.login]。
+2023-11-22 17:33:22.858 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getLoginTicket]。
+2023-11-22 17:33:22.874 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.880 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPostRows]。
+2023-11-22 17:33:22.883 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.DiscussPostServiceImpl.getDiscussPosts]。
+2023-11-22 17:33:22.898 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.901 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.902 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.906 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.907 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.910 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.910 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.914 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.914 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.916 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.917 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.919 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.920 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.923 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.924 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.926 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.927 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.931 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.931 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.UserServiceImpl.getUserById]。
+2023-11-22 17:33:22.934 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.LikeServiceImpl.likeCount]。
+2023-11-22 17:33:22.934 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.MessageServiceImpl.findUnreadNoticeCount]。
+2023-11-22 17:33:22.943 [http-nio-8080-exec-10] INFO  c.m.community.controller.aspect.ServiceLogAspect - 用户[0:0:0:0:0:0:0:1]，在[2023-11-22 17:33:22]，访问了[com.majing.community.service.impl.MessageServiceImpl.getLetterUnreadCount]。
+2023-11-22 17:33:23.106 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:24.191 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:25.109 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:26.091 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Node -1 disconnected.
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-22 17:33:26.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-11-22 17:33:26.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-community-consumer-group-1 unregistered
+2023-11-22 17:33:26.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - community-consumer-group: Consumer stopped
